@@ -254,11 +254,18 @@ export default function HomeScreen() {
       >
         {/* ── Header ── */}
         <View style={styles.header}>
-          <Text style={styles.greeting}>
-            {greeting()},{' '}
-            {preferences.isAnonymous ? '👻 ' : ''}{displayName}
-          </Text>
-          <Text style={styles.timestamp}>{formatNow()}</Text>
+          <View style={styles.headerTopRow}>
+            <View style={{ flex: 1 }}>
+              <Text style={styles.greeting}>
+                {greeting()},{' '}
+                {preferences.isAnonymous ? '👻 ' : ''}{displayName}
+              </Text>
+              <Text style={styles.timestamp}>{formatNow()}</Text>
+            </View>
+            <TouchableOpacity style={styles.mapBtn} onPress={() => router.push('/map')}>
+              <Text style={styles.mapBtnText}>🗺️</Text>
+            </TouchableOpacity>
+          </View>
           <View style={styles.statusRow}>
             <View style={styles.statusDot} />
             <Text style={styles.statusText}>
@@ -388,6 +395,13 @@ const styles = StyleSheet.create({
     paddingBottom: 24,
     gap: 4,
   },
+  headerTopRow: { flexDirection: 'row', alignItems: 'flex-start' },
+  mapBtn: {
+    width: 44, height: 44, borderRadius: 22,
+    backgroundColor: '#161616', borderWidth: 1, borderColor: '#2A2A2A',
+    alignItems: 'center', justifyContent: 'center', marginTop: 4,
+  },
+  mapBtnText: { fontSize: 20 },
   greeting: {
     fontSize: 26,
     fontWeight: '800',
