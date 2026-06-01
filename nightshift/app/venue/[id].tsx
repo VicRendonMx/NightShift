@@ -18,7 +18,9 @@ import { useLocalSearchParams, router } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import * as Haptics from 'expo-haptics'
 import { useVenue, formatHourTime, getDayLabel, isTodayOpen, getTodayDbDay } from '../../hooks/useVenue'
-import { MOCK_DEALS, MOCK_CROWD_SIGNALS } from '../../lib/mock-data'
+import { useVenueCrowdFromCheckins } from '../../hooks/useCrowdSignal'
+import { useDeals } from '../../hooks/useDeals'
+import { MOCK_CROWD_SIGNALS } from '../../lib/mock-data'
 import type { VenuePhoto, Hours } from '../../types/database'
 
 const { width: SW, height: SH } = Dimensions.get('window')
@@ -186,6 +188,8 @@ const secStyles = StyleSheet.create({
 export default function VenueDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>()
   const { venue, photos, hours, loading, error } = useVenue(id)
+  const { avgCrowd, checkInCount } = useVenueCrowdFromCheckins(id)
+  const { deals } = useDeals(id)
   const [hoursExpanded, setHoursExpanded] = useState(false)
   const [heroError, setHeroError] = useState(false)
 
@@ -211,8 +215,11 @@ export default function VenueDetailScreen() {
   const primaryPhoto = photos.find(p => p.is_primary)?.url ?? photos[0]?.url ?? null
   const heroUrl = (!heroError && primaryPhoto) ? primaryPhoto : null
   const { open: isOpen, openTime, closeTime } = isTodayOpen(hours)
-  const crowdValue = MOCK_CROWD_SIGNALS[venue.id] ?? Math.floor(Math.random() * 80 + 10)
-  const venueDeal = MOCK_DEALS.find(d => d.venue_id === venue.id)
+  // Use real crowd data from check-ins if available, else fall back to mock
+  const crowdValue = avgCrowd !== null
+    ? Math.round((avgCrowd / 5) * 100)
+    : (MOCK_CROWD_SIGNALS[venue.id] ?? Math.floor(Math.random() * 60 + 20))
+  const venueDeal = deals[0] ?? null
 
   function openStatus() {
     if (isOpen) return `Open · closes ${formatHourTime(closeTime)}`
@@ -393,14 +400,21 @@ export default function VenueDetailScreen() {
         {/* ── Deals ── */}
         <View style={styles.section}>
           <Section title="Deals tonight">
-            {venueDeal ? (
-              <View style={styles.dealCard}>
-                <Text style={styles.dealEmoji}>🎟</Text>
-                <View style={{ flex: 1 }}>
-                  <Text style={styles.dealDesc}>{venueDeal.description}</Text>
-                  <Text style={styles.dealMeta}>Valid until {venueDeal.valid_until}</Text>
+            {deals.length > 0 ? (
+              deals.map(d => (
+                <View key={d.id} style={styles.dealCard}>
+                  <Text style={styles.dealEmoji}>🎟</Text>
+                  <View style={{ flex: 1 }}>
+                    <Text style={styles.dealDesc}>{d.title}</Text>
+                    {d.description ? (
+                      <Text style={styles.dealMeta}>{d.description}</Text>
+                    ) : null}
+                    {d.start_time && d.end_time ? (
+                      <Text style={styles.dealMeta}>{d.start_time.slice(0,5)} – {d.end_time.slice(0,5)}</Text>
+                    ) : null}
+                  </View>
                 </View>
-              </View>
+              ))
             ) : (
               <Text style={styles.emptyText}>No deals listed tonight</Text>
             )}
@@ -409,7 +423,7 @@ export default function VenueDetailScreen() {
 
         {/* ── Crowd meter ── */}
         <View style={styles.section}>
-          <Section title="Crowd right now">
+          <Section title={`Crowd right now${checkInCount > 0 ? ` · ${checkInCount} check-ins today` : ''}`}>
             <CrowdMeter value={crowdValue} />
           </Section>
         </View>

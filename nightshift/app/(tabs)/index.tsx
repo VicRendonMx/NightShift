@@ -16,8 +16,9 @@ import { useUser } from '../../context/UserContext'
 import { useVenues } from '../../hooks/useVenues'
 import { useNeighbourhoods } from '../../hooks/useNeighbourhoods'
 import { VenueCard } from '../../components/VenueCard'
-import { MOCK_DEALS } from '../../lib/mock-data'
+import { useTonightsDeals } from '../../hooks/useDeals'
 import type { VenueRow } from '../../hooks/useVenues'
+import type { Deal } from '../../hooks/useDeals'
 
 const AMBER = '#F5A623'
 const BG = '#0D0D0D'
@@ -133,16 +134,18 @@ const filterStyles = StyleSheet.create({
 
 // ── Deal card ──────────────────────────────────────────────────────────────────
 
-function DealCard({ deal }: { deal: typeof MOCK_DEALS[0] }) {
+function DealCard({ deal }: { deal: Deal }) {
+  const venueName = (deal.venue as any)?.name ?? ''
+  const hoodName = (deal.venue as any)?.neighbourhood?.name ?? ''
   return (
     <View style={dealStyles.card}>
       <View style={dealStyles.iconWrap}>
         <Text style={dealStyles.icon}>🎟</Text>
       </View>
       <View style={dealStyles.info}>
-        <Text style={dealStyles.venue}>{deal.venue_name}</Text>
-        <Text style={dealStyles.desc} numberOfLines={2}>{deal.description}</Text>
-        <Text style={dealStyles.meta}>Valid until {deal.valid_until} · {deal.neighbourhood}</Text>
+        <Text style={dealStyles.venue}>{venueName}</Text>
+        <Text style={dealStyles.desc} numberOfLines={2}>{deal.title}</Text>
+        {hoodName ? <Text style={dealStyles.meta}>{hoodName}</Text> : null}
       </View>
     </View>
   )
@@ -181,8 +184,11 @@ export default function HomeScreen() {
   const { preferences } = useUser()
   const { venues, loading, error } = useVenues()
   const { neighbourhoods } = useNeighbourhoods()
+  const { deals } = useTonightsDeals()
   const [selectedNeighbourhood, setSelectedNeighbourhood] = useState<string | null>(null)
   const [refreshing, setRefreshing] = useState(false)
+
+  const isAfterMidnight = new Date().getHours() < 5
 
   const displayName = preferences.isAnonymous
     ? 'Ghost'
@@ -267,7 +273,7 @@ export default function HomeScreen() {
         {picks.length > 0 && (
           <View style={styles.section}>
             <SectionHeader
-              title={preferences.vibes.length > 0 ? 'Tonight's picks for you' : 'Top rated tonight'}
+              title={preferences.vibes.length > 0 ? "Tonight's picks for you" : 'Top rated tonight'}
               count={picks.length}
             />
             <FlatList
@@ -288,11 +294,13 @@ export default function HomeScreen() {
           </View>
         )}
 
-        {/* ── Deals tonight (mock) ── */}
-        <View style={styles.section}>
-          <SectionHeader title="Deals tonight" />
-          {MOCK_DEALS.map(d => <DealCard key={d.id} deal={d} />)}
-        </View>
+        {/* ── Deals tonight ── */}
+        {deals.length > 0 && (
+          <View style={styles.section}>
+            <SectionHeader title="Deals tonight" count={deals.length} />
+            {deals.slice(0, 5).map(d => <DealCard key={d.id} deal={d} />)}
+          </View>
+        )}
 
         {/* ── Neighbourhood filter ── */}
         <View style={[styles.section, { gap: 0 }]}>
