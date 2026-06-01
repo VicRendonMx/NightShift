@@ -217,8 +217,6 @@ export default function HomeScreen() {
     [venues]
   )
 
-  const isAfterMidnight = new Date().getHours() < 5
-
   function navigateToVenue(venue: VenueRow) {
     router.push({ pathname: '/venue/[id]', params: { id: venue.id } })
   }
