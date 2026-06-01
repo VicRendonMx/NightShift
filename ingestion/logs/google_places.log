@@ -1,0 +1,3 @@
+2026-06-01 15:22:31,024  INFO      Grid generated: 962 cells
+2026-06-01 15:22:31,024  INFO      Phase 1 — Grid sweep: 962 cells × 12 types
+2026-06-01 15:26:18,565  INFO      Grid progress: 50/962 cells  unique_ids_so_far=51  new_this_cell=0

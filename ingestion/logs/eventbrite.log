@@ -1,0 +1,10 @@
+2026-06-01 15:06:32,497  INFO      ─── Fetching category 103 ───
+2026-06-01 15:06:32,498  INFO      Category 103  page 1  continuation=START
+2026-06-01 15:06:38,620  ERROR     HTTP error fetching category 103 page 1: 404 Client Error: NOT FOUND for url: https://www.eventbriteapi.com/v3/events/search/?location.address=Toronto%2C+ON&location.within=15km&categories=103&expand=venue%2Cticket_availability&page_size=50
+2026-06-01 15:06:38,621  INFO      ─── Fetching category 105 ───
+2026-06-01 15:06:38,622  INFO      Category 105  page 1  continuation=START
+2026-06-01 15:06:43,805  ERROR     HTTP error fetching category 105 page 1: 404 Client Error: NOT FOUND for url: https://www.eventbriteapi.com/v3/events/search/?location.address=Toronto%2C+ON&location.within=15km&categories=105&expand=venue%2Cticket_availability&page_size=50
+2026-06-01 15:06:43,809  INFO      ─── Fetching category 110 ───
+2026-06-01 15:06:43,809  INFO      Category 110  page 1  continuation=START
+2026-06-01 15:06:47,928  ERROR     HTTP error fetching category 110 page 1: 404 Client Error: NOT FOUND for url: https://www.eventbriteapi.com/v3/events/search/?location.address=Toronto%2C+ON&location.within=15km&categories=110&expand=venue%2Cticket_availability&page_size=50
+2026-06-01 15:06:47,931  INFO      Done. inserted=0  updated=0  skipped=0

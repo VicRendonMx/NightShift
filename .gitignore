@@ -1,0 +1,52 @@
+# ── Secrets — NEVER commit these ─────────────────────────────────────────────
+ingestion/.env
+nightshift/.env.local
+nightshift/.env*.local
+.env
+.env.local
+.env.*.local
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+ingestion/venv/
+ingestion/.venv/
+ingestion/env/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Node / Expo ───────────────────────────────────────────────────────────────
+nightshift/node_modules/
+nightshift/.expo/
+nightshift/dist/
+nightshift/web-build/
+nightshift/.metro-health-check*
+nightshift/expo-env.d.ts
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+postgres-data/
+pgadmin-data/
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.cursor/
+.claude/
+AGENTS.md
+CLAUDE.md
+*.swp
+*.swo
+
+# ── Playwright ────────────────────────────────────────────────────────────────
+ingestion/playwright-report/
+ingestion/test-results/

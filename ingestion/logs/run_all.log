@@ -1,0 +1,1055 @@
+2026-06-01 14:52:04,465  INFO      ═══ NightShift ingestion pipeline started at 2026-06-01T18:52:04.465357+00:00 ═══
+2026-06-01 14:52:04,465  INFO      ━━━ START  Neighbourhoods ━━━
+2026-06-01 14:52:04,827  INFO      INSERTED  neighbourhood=king-west  id=beb1a44c-0fcb-49d7-a0de-f2b9fad8d699
+2026-06-01 14:52:04,828  INFO      INSERTED  neighbourhood=entertainment-district  id=383a41fb-2083-43aa-a068-26d45757bc85
+2026-06-01 14:52:04,828  INFO      INSERTED  neighbourhood=kensington-market  id=6df9f72e-1789-412a-a0da-de9d9593de36
+2026-06-01 14:52:04,829  INFO      INSERTED  neighbourhood=little-italy  id=29e01fa7-721e-4ff4-9c41-021747751c1f
+2026-06-01 14:52:04,829  INFO      INSERTED  neighbourhood=ossington  id=3207c69e-becb-4206-a455-d5ee8b37c68f
+2026-06-01 14:52:04,829  INFO      INSERTED  neighbourhood=leslieville  id=5ae9e8f9-1a23-4e15-8cca-f2e107686ddc
+2026-06-01 14:52:04,830  INFO      INSERTED  neighbourhood=church-wellesley  id=4803d631-9311-43ec-8c42-e7367300663e
+2026-06-01 14:52:04,830  INFO      INSERTED  neighbourhood=distillery-district  id=2a34c935-caeb-4468-8829-61ba46d190e3
+2026-06-01 14:52:04,831  INFO      INSERTED  neighbourhood=annex  id=7f5dba86-dffb-49fc-8194-fc2ad50a4ba4
+2026-06-01 14:52:04,831  INFO      INSERTED  neighbourhood=yorkville  id=d9680c1f-c788-4bcf-8b9f-c3ca668600c4
+2026-06-01 14:52:04,831  INFO      INSERTED  neighbourhood=scarborough  id=5895b548-404c-430d-b831-ec5c3c245bd9
+2026-06-01 14:52:04,832  INFO      INSERTED  neighbourhood=north-york  id=49c4b4e3-c539-4b66-b641-eb61181ce198
+2026-06-01 14:52:04,833  INFO      Done. inserted=12  updated=0  skipped=0
+2026-06-01 14:52:04,833  INFO      ━━━ DONE   Neighbourhoods  elapsed=0.4s  counts={'inserted': 12, 'updated': 0, 'skipped': 0} ━━━
+2026-06-01 14:52:04,833  INFO      ━━━ START  Google Places (venues) ━━━
+2026-06-01 14:52:05,024  INFO      Searching: nightclub Toronto
+2026-06-01 14:52:06,843  INFO      Running total unique place_ids: 60
+2026-06-01 14:52:06,844  INFO      Searching: bar Toronto
+2026-06-01 14:52:08,412  INFO      Running total unique place_ids: 117
+2026-06-01 14:52:08,413  INFO      Searching: lounge Toronto
+2026-06-01 14:52:10,284  INFO      Running total unique place_ids: 160
+2026-06-01 14:52:10,286  INFO      Searching: rooftop bar Toronto
+2026-06-01 14:52:11,888  INFO      Running total unique place_ids: 199
+2026-06-01 14:52:11,888  INFO      Searching: after hours club Toronto
+2026-06-01 14:52:14,708  INFO      Running total unique place_ids: 214
+2026-06-01 14:52:14,708  INFO      Searching: live music venue Toronto
+2026-06-01 14:52:16,592  INFO      Running total unique place_ids: 261
+2026-06-01 14:52:16,592  INFO      Searching: karaoke bar Toronto
+2026-06-01 14:52:19,221  INFO      Running total unique place_ids: 312
+2026-06-01 14:52:19,221  INFO      Searching: comedy club Toronto
+2026-06-01 14:52:20,609  INFO      Running total unique place_ids: 349
+2026-06-01 14:52:20,609  INFO      Searching: dance club Toronto
+2026-06-01 14:52:21,944  INFO      Running total unique place_ids: 354
+2026-06-01 14:52:21,944  INFO      Searching: jazz bar Toronto
+2026-06-01 14:52:24,048  INFO      Running total unique place_ids: 381
+2026-06-01 14:52:24,048  INFO      Discovery complete. Total unique place_ids: 381
+2026-06-01 14:52:24,065  INFO      Processing 1/381  place_id=ChIJW2EjTNA0K4gRc2nJzjlHXqI
+2026-06-01 14:52:24,678  INFO      INSERTED  venue_id=58608391-f202-4dda-89a6-cf388f857faa  place_id=ChIJW2EjTNA0K4gRc2nJzjlHXqI  name=The Porch
+2026-06-01 14:52:26,070  INFO      Processing 2/381  place_id=ChIJx6iMpok1K4gRmc5_9R5iUT0
+2026-06-01 14:52:26,390  INFO      INSERTED  venue_id=0e2bc1d2-1bb2-48bd-8c5b-bbf5593d9a59  place_id=ChIJx6iMpok1K4gRmc5_9R5iUT0  name=DROM Taberna
+2026-06-01 14:52:28,201  INFO      Processing 3/381  place_id=ChIJ-ylbFjHL1IkR63UaaxBAAQ4
+2026-06-01 14:52:28,481  INFO      INSERTED  venue_id=81d08b8e-f681-48bb-8c31-ec66de6d2d39  place_id=ChIJ-ylbFjHL1IkR63UaaxBAAQ4  name=AAA Bar
+2026-06-01 14:52:30,312  INFO      Processing 4/381  place_id=ChIJjYX6ENDL1IkR8rd8nJEmL4Q
+2026-06-01 14:52:30,842  INFO      INSERTED  venue_id=c1326dba-5e5b-43db-bac4-b5f25ec45be3  place_id=ChIJjYX6ENDL1IkR8rd8nJEmL4Q  name=ECSTATIC DANCE TORONTO
+2026-06-01 14:52:32,109  INFO      Processing 5/381  place_id=ChIJc4-p5NA0K4gRcLWKQiJY2PQ
+2026-06-01 14:52:32,645  INFO      INSERTED  venue_id=23233d04-4d20-4f24-b96a-c6694ddf46e7  place_id=ChIJc4-p5NA0K4gRcLWKQiJY2PQ  name=Princess of Wales Theatre
+2026-06-01 14:52:34,192  INFO      Processing 6/381  place_id=ChIJIUvoUNc1K4gRrYrxrY32440
+2026-06-01 14:52:34,760  INFO      INSERTED  venue_id=14c09748-e341-426a-9236-5542087a40ee  place_id=ChIJIUvoUNc1K4gRrYrxrY32440  name=The K Karaoke
+2026-06-01 14:52:36,273  INFO      Processing 7/381  place_id=ChIJmbOTPo8zK4gR6hBUZRIM1FM
+2026-06-01 14:52:36,530  INFO      INSERTED  venue_id=f3131695-751b-469e-bffa-9e0edc04c03b  place_id=ChIJmbOTPo8zK4gR6hBUZRIM1FM  name=GONO Karaoke
+2026-06-01 14:52:38,536  INFO      Processing 8/381  place_id=ChIJi-NzR9o1K4gRTGS0yYryPBg
+2026-06-01 14:52:38,833  INFO      INSERTED  venue_id=c624c57c-f214-49cd-afb1-74707298814d  place_id=ChIJi-NzR9o1K4gRTGS0yYryPBg  name=The Lounge at Live Nation
+2026-06-01 14:52:40,487  INFO      Processing 9/381  place_id=ChIJuZjs4yw1K4gR1zCT-AEfHwg
+2026-06-01 14:52:40,761  INFO      INSERTED  venue_id=bf5e9b74-0801-4417-8cad-0dc8669723e6  place_id=ChIJuZjs4yw1K4gR1zCT-AEfHwg  name=In Good Spirits Co.
+2026-06-01 14:52:42,816  INFO      Processing 10/381  place_id=ChIJ81rnZsw0K4gRfWj9dnRHEiQ
+2026-06-01 14:52:43,741  INFO      INSERTED  venue_id=91da422a-9449-440e-8b20-8a6d66518616  place_id=ChIJ81rnZsw0K4gRfWj9dnRHEiQ  name=Toronto Public Library - City Hall Branch
+2026-06-01 14:52:45,161  INFO      Processing 11/381  place_id=ChIJ7xEwmBLM1IkRD6jP3SIEHLM
+2026-06-01 14:52:45,754  INFO      INSERTED  venue_id=1324e123-8699-46ff-b9eb-e1ee2921bf32  place_id=ChIJ7xEwmBLM1IkRD6jP3SIEHLM  name=Ruby Tuesdays
+2026-06-01 14:52:47,016  INFO      Processing 12/381  place_id=ChIJmXsGo8o0K4gRdZ3C_c1vqb4
+2026-06-01 14:52:47,896  INFO      INSERTED  venue_id=8dfa2f59-9185-4b66-a950-0e3f51025517  place_id=ChIJmXsGo8o0K4gRdZ3C_c1vqb4  name=Club Zanzibar
+2026-06-01 14:52:50,378  INFO      Processing 13/381  place_id=ChIJR1UqwV80K4gRbmPYtI_Ijcs
+2026-06-01 14:52:50,680  INFO      INSERTED  venue_id=423da7fe-cf3d-4dd9-81d5-6e1337bf6c9b  place_id=ChIJR1UqwV80K4gRbmPYtI_Ijcs  name=Comedy Nuggets
+2026-06-01 14:52:52,045  INFO      Processing 14/381  place_id=ChIJy70XqzTL1IkR1Lhf72C_vWU
+2026-06-01 14:52:52,311  INFO      INSERTED  venue_id=65996658-cba7-4c61-8b27-8b2412d51f46  place_id=ChIJy70XqzTL1IkR1Lhf72C_vWU  name=Toronto Symphony Orchestra
+2026-06-01 14:52:53,842  INFO      Processing 15/381  place_id=ChIJWQL8Ssw1K4gRPs-5qrbeY78
+2026-06-01 14:52:54,234  INFO      INSERTED  venue_id=fbfd1d45-2c5f-45ea-8a9e-054cc8ad69fb  place_id=ChIJWQL8Ssw1K4gRPs-5qrbeY78  name=Bandshell Park at Exhibition Place
+2026-06-01 14:52:55,946  INFO      Processing 16/381  place_id=ChIJ9fDxKDI1K4gRRnoeC3UxDa4
+2026-06-01 14:52:56,319  INFO      INSERTED  venue_id=0010822d-9e87-4d94-be39-3321b1e5b54c  place_id=ChIJ9fDxKDI1K4gRRnoeC3UxDa4  name=The Pearl Events
+2026-06-01 14:52:58,830  INFO      Processing 17/381  place_id=ChIJ4SisMss0K4gRSJIzuoWUzRI
+2026-06-01 14:52:59,092  INFO      INSERTED  venue_id=c487d75e-ddaf-4abb-8999-356d2379f3a6  place_id=ChIJ4SisMss0K4gRSJIzuoWUzRI  name=3 Brasseurs MicroBrewery - Toronto
+2026-06-01 14:53:01,173  INFO      Processing 18/381  place_id=ChIJVVXJCNs0K4gRm0mMdGUkUB4
+2026-06-01 14:53:02,086  INFO      INSERTED  venue_id=556f6ef9-2b51-4f2a-bd48-839c3fd91a48  place_id=ChIJVVXJCNs0K4gRm0mMdGUkUB4  name=Watson's
+2026-06-01 14:53:03,296  INFO      Processing 19/381  place_id=ChIJ7XS3FNs0K4gRWU6Z5iAzsE0
+2026-06-01 14:53:03,669  INFO      INSERTED  venue_id=3f1ea9ce-6d70-4227-846e-74beb8069e49  place_id=ChIJ7XS3FNs0K4gRWU6Z5iAzsE0  name=Horseshoe Tavern
+2026-06-01 14:53:05,125  INFO      Processing 20/381  place_id=ChIJEYZcuTvL1IkRvEROyuS7gjU
+2026-06-01 14:53:05,425  INFO      INSERTED  venue_id=d3096fdb-9839-4313-8e08-a95e277eb417  place_id=ChIJEYZcuTvL1IkRvEROyuS7gjU  name=Canadian Opera Company
+2026-06-01 14:53:07,234  INFO      Processing 21/381  place_id=ChIJ-f8_8N40K4gR7CaKCiqkiRs
+2026-06-01 14:53:07,496  INFO      INSERTED  venue_id=03d7bd60-8717-4536-901f-5e6d1cd63f92  place_id=ChIJ-f8_8N40K4gR7CaKCiqkiRs  name=2 Cats
+2026-06-01 14:53:09,438  INFO      Processing 22/381  place_id=ChIJw1ylCFg0K4gRNcy5mMX54uM
+2026-06-01 14:53:09,776  INFO      INSERTED  venue_id=e4348d59-eadf-4e3e-b01c-2e0893ca611e  place_id=ChIJw1ylCFg0K4gRNcy5mMX54uM  name=The Emmet Ray Whisky Jazz Bar
+2026-06-01 14:53:11,376  INFO      Processing 23/381  place_id=ChIJEbxui5_M1IkRJ5Ko1AjgaX0
+2026-06-01 14:53:11,973  INFO      INSERTED  venue_id=d7dd8e09-55f5-4064-a423-f64f8e92385a  place_id=ChIJEbxui5_M1IkRJ5Ko1AjgaX0  name=SoCap Comedy (The Social Capital)
+2026-06-01 14:53:13,209  INFO      Processing 24/381  place_id=ChIJFazJYFQ1K4gRhwajVeok8Rc
+2026-06-01 14:53:14,270  INFO      INSERTED  venue_id=d7817ff1-b864-41d0-bf17-433a74be2d1c  place_id=ChIJFazJYFQ1K4gRhwajVeok8Rc  name=Houndstooth
+2026-06-01 14:53:15,612  INFO      Processing 25/381  place_id=ChIJmxWdWSvL1IkRUhLErPZc6Xk
+2026-06-01 14:53:15,860  INFO      INSERTED  venue_id=dc07cc16-a8c8-462b-a311-7af1b1ef9181  place_id=ChIJmxWdWSvL1IkRUhLErPZc6Xk  name=Sher Club
+2026-06-01 14:53:16,244  INFO      Processing 26/381  place_id=ChIJZbZK3QU1K4gRznOuVoRatyk
+2026-06-01 14:53:16,838  INFO      INSERTED  venue_id=d1c72dd7-adcc-4ddc-8aa9-05124b49bf6c  place_id=ChIJZbZK3QU1K4gRznOuVoRatyk  name=The Well
+2026-06-01 14:53:19,243  INFO      Processing 27/381  place_id=ChIJr0h7XD81K4gRkfPeO3n51tE
+2026-06-01 14:53:19,513  INFO      INSERTED  venue_id=1cdf9ed4-e1db-4c1a-bd5c-9cf0dfc665cc  place_id=ChIJr0h7XD81K4gRkfPeO3n51tE  name=Mama's Liquor & Lounge
+2026-06-01 14:53:20,857  INFO      Processing 28/381  place_id=ChIJdQEKlt00K4gRk_z_cTKsXqE
+2026-06-01 14:53:21,141  INFO      INSERTED  venue_id=728b009c-91a5-4436-90f5-85e7ae68adf8  place_id=ChIJdQEKlt00K4gRk_z_cTKsXqE  name=Velvet Underground
+2026-06-01 14:53:22,683  INFO      Processing 29/381  place_id=ChIJgbOKLe81K4gRFGg-OQ3Tvrg
+2026-06-01 14:53:23,067  INFO      INSERTED  venue_id=285ff27b-8711-44f0-aec2-b37dbd566f56  place_id=ChIJgbOKLe81K4gRFGg-OQ3Tvrg  name=Yorkville Lounge
+2026-06-01 14:53:25,005  INFO      Processing 30/381  place_id=ChIJBw3WTaw1K4gRYa8J3iRyPWY
+2026-06-01 14:53:25,280  INFO      INSERTED  venue_id=422bc57e-7d84-48b1-ac3e-0d2ed0f53086  place_id=ChIJBw3WTaw1K4gRYa8J3iRyPWY  name=TO. Lounge
+2026-06-01 14:53:27,667  INFO      Processing 31/381  place_id=ChIJ9S4rn-Q1K4gR_qu96eATgkM
+2026-06-01 14:53:27,924  INFO      INSERTED  venue_id=587d6fe1-ade6-47ea-a5cf-304071f4345e  place_id=ChIJ9S4rn-Q1K4gR_qu96eATgkM  name=Cannabis Comedy Club Toronto
+2026-06-01 14:53:29,773  INFO      Processing 32/381  place_id=ChIJFzoVnhI1K4gR-0ENgb8L_60
+2026-06-01 14:53:30,045  INFO      INSERTED  venue_id=d85ffca9-835f-496c-99ff-08e52ec7401a  place_id=ChIJFzoVnhI1K4gR-0ENgb8L_60  name=The Rooftop(Private Party Patio)
+2026-06-01 14:53:30,771  INFO      Processing 33/381  place_id=ChIJL5iHYQA1K4gRyiBbi98yDdU
+2026-06-01 14:53:31,450  INFO      INSERTED  venue_id=00db8036-d452-48b8-ab84-5ff7708d96cc  place_id=ChIJL5iHYQA1K4gRyiBbi98yDdU  name=Karaoke
+2026-06-01 14:53:31,453  INFO      Processing 34/381  place_id=ChIJVw9tTAA1K4gRqfeb19CS2cg
+2026-06-01 14:53:31,974  INFO      INSERTED  venue_id=bb0622d8-3950-4eee-85bb-9e707a63e8bf  place_id=ChIJVw9tTAA1K4gRqfeb19CS2cg  name=Future
+2026-06-01 14:53:33,952  INFO      Processing 35/381  place_id=ChIJL41yFNA0K4gRMmZ2AnkGc_w
+2026-06-01 14:53:34,592  INFO      INSERTED  venue_id=a75ea904-1b73-4d8e-a26b-77e9bcb50f01  place_id=ChIJL41yFNA0K4gRMmZ2AnkGc_w  name=The Ballroom Bowl - John St
+2026-06-01 14:53:36,796  INFO      Processing 36/381  place_id=ChIJmWec_M80K4gRs823qq6Rv94
+2026-06-01 14:53:37,214  INFO      INSERTED  venue_id=773ee51c-623b-4122-9bb7-46efc94d88b4  place_id=ChIJmWec_M80K4gRs823qq6Rv94  name=The Corner Comedy Club
+2026-06-01 14:53:38,688  INFO      Processing 37/381  place_id=ChIJx8MptUzL1IkRm622ict1t1I
+2026-06-01 14:53:39,229  INFO      INSERTED  venue_id=13a090ca-439c-4b09-9540-c69b2f9cb789  place_id=ChIJx8MptUzL1IkRm622ict1t1I  name=Flash on Church
+2026-06-01 14:53:40,492  INFO      Processing 38/381  place_id=ChIJCe20v8o0K4gRlovZzWf_JJA
+2026-06-01 14:53:40,933  INFO      INSERTED  venue_id=24f0d02d-5930-4336-a03f-e012f17c8124  place_id=ChIJCe20v8o0K4gRlovZzWf_JJA  name=The Yonge St Warehouse
+2026-06-01 14:53:42,313  INFO      Processing 39/381  place_id=ChIJy6bC5ZM0K4gRciAWV42A2gk
+2026-06-01 14:53:42,587  INFO      INSERTED  venue_id=31f54fe9-2223-4631-91cd-c034f2cf5704  place_id=ChIJy6bC5ZM0K4gRciAWV42A2gk  name=Lee's Palace
+2026-06-01 14:53:45,472  INFO      Processing 40/381  place_id=ChIJKRxf-8o0K4gRZpyDa9040KM
+2026-06-01 14:53:45,761  INFO      INSERTED  venue_id=0745fa52-35a4-4d45-9123-7395eb71a671  place_id=ChIJKRxf-8o0K4gRZpyDa9040KM  name=St. Louis Bar & Grill
+2026-06-01 14:53:47,102  INFO      Processing 41/381  place_id=ChIJ8bxierc1K4gRX1CEdlDHBGA
+2026-06-01 14:53:47,347  INFO      INSERTED  venue_id=a9433859-a74a-4f33-b495-94c8d6bab711  place_id=ChIJ8bxierc1K4gRX1CEdlDHBGA  name=Public Gardens Toronto
+2026-06-01 14:53:48,653  INFO      Processing 42/381  place_id=ChIJSUqensnN1IkRcUL7uRzdMOQ
+2026-06-01 14:53:49,184  INFO      INSERTED  venue_id=81358ccc-3029-4a48-9b8f-df862756532a  place_id=ChIJSUqensnN1IkRcUL7uRzdMOQ  name=Stand Up Comedy LMAO Toronto Stand up Comedy Cub
+2026-06-01 14:53:49,187  INFO      Processing 43/381  place_id=ChIJG6nGgyY1K4gRPj-SyUG3Efk
+2026-06-01 14:53:49,446  INFO      INSERTED  venue_id=97fdeec3-acb2-496a-bcc4-dc1f975f6474  place_id=ChIJG6nGgyY1K4gRPj-SyUG3Efk  name=The Boardroom Comedy Club Toronto
+2026-06-01 14:53:51,256  INFO      Processing 44/381  place_id=ChIJMxVoV0vL1IkRyYXXHW_eFmE
+2026-06-01 14:53:51,507  INFO      INSERTED  venue_id=79899c68-6f97-4479-acb0-79c804071192  place_id=ChIJMxVoV0vL1IkRyYXXHW_eFmE  name=Hair Of The Dog Neighbourhood Pub & Restaurant
+2026-06-01 14:53:53,159  INFO      Processing 45/381  place_id=ChIJ195p17o0K4gRKpPSQBiPJG4
+2026-06-01 14:53:53,487  INFO      INSERTED  venue_id=9f24b19c-d619-4cf2-a27c-3c6cebad7d17  place_id=ChIJ195p17o0K4gRKpPSQBiPJG4  name=Writers Room Bar
+2026-06-01 14:53:55,470  INFO      Processing 46/381  place_id=ChIJKSp50NI0K4gR6C6L3yYqpYY
+2026-06-01 14:53:55,724  INFO      INSERTED  venue_id=c307f1b9-7d70-4e85-957f-3b6b111f6c8d  place_id=ChIJKSp50NI0K4gR6C6L3yYqpYY  name=Canoe
+2026-06-01 14:53:57,751  INFO      Processing 47/381  place_id=ChIJuevIJ840K4gROAKxcVAe5IQ
+2026-06-01 14:53:58,363  INFO      INSERTED  venue_id=9ca8e0f8-3244-4b04-8df9-1d4c22f11595  place_id=ChIJuevIJ840K4gROAKxcVAe5IQ  name=The Underground Dance Centre
+2026-06-01 14:53:59,872  INFO      Processing 48/381  place_id=ChIJk3f-0co0K4gRLptE9VtASRo
+2026-06-01 14:54:00,290  INFO      INSERTED  venue_id=f48fe8e5-bf2b-4ed4-a71c-5d7efb4b772f  place_id=ChIJk3f-0co0K4gRLptE9VtASRo  name=Jack's Sankofa Square
+2026-06-01 14:54:01,738  INFO      Processing 49/381  place_id=ChIJf-y30R7L1IkR2hsXeVvm6hI
+2026-06-01 14:54:01,987  INFO      INSERTED  venue_id=614ca738-9a47-4864-a5a8-d93cc57ebf8c  place_id=ChIJf-y30R7L1IkR2hsXeVvm6hI  name=Rebel
+2026-06-01 14:54:04,349  INFO      Processing 50/381  place_id=ChIJ72IkBLU1K4gRLKlpbw8kf10
+2026-06-01 14:54:04,630  INFO      INSERTED  venue_id=871e5370-70cd-42c2-8325-752ce3d0b941  place_id=ChIJ72IkBLU1K4gRLKlpbw8kf10  name=Goodnight Cocktail Club
+2026-06-01 14:54:06,674  INFO      Processing 51/381  place_id=ChIJT0aMMh41K4gRhBZIfKLnF2k
+2026-06-01 14:54:07,204  INFO      INSERTED  venue_id=9d7868ac-630c-4813-987a-d54812b18096  place_id=ChIJT0aMMh41K4gRhBZIfKLnF2k  name=CÈ LA VI Lounge
+2026-06-01 14:54:08,764  INFO      Processing 52/381  place_id=ChIJx65PhjTN1IkRI7aeuRxU_dY
+2026-06-01 14:54:09,107  INFO      INSERTED  venue_id=efe4b536-e1e1-496e-b108-9a70649ccbc8  place_id=ChIJx65PhjTN1IkRI7aeuRxU_dY  name=Laughter Hours Comedy Club
+2026-06-01 14:54:09,113  INFO      Processing 53/381  place_id=ChIJ79q18GLL1IkRT4g-ymGFu0s
+2026-06-01 14:54:09,371  INFO      INSERTED  venue_id=68fdf533-fc7a-4db2-a8e9-359d83eb10e6  place_id=ChIJ79q18GLL1IkRT4g-ymGFu0s  name=Bar Cathedral
+2026-06-01 14:54:11,162  INFO      Processing 54/381  place_id=ChIJvywkbX7L1IkRQ-qfFBF6HX0
+2026-06-01 14:54:11,439  INFO      INSERTED  venue_id=15cabd9b-7bb6-44e3-97d1-da5d4a54d5e5  place_id=ChIJvywkbX7L1IkRQ-qfFBF6HX0  name=Penthouse17
+2026-06-01 14:54:12,799  INFO      Processing 55/381  place_id=ChIJHRelXAA1K4gRt55uMx2dkZc
+2026-06-01 14:54:13,091  INFO      INSERTED  venue_id=07c1f22b-3dcf-4f1e-a809-b9001914864f  place_id=ChIJHRelXAA1K4gRt55uMx2dkZc  name=Tiger Den
+2026-06-01 14:54:14,917  INFO      Processing 56/381  place_id=ChIJ97R07Iw0K4gRbkfJYrvQRt8
+2026-06-01 14:54:15,188  INFO      INSERTED  venue_id=11f449de-7850-4a27-82f7-52d299b24945  place_id=ChIJ97R07Iw0K4gRbkfJYrvQRt8  name=JaYuGongGan Karaoke
+2026-06-01 14:54:16,434  INFO      Processing 57/381  place_id=ChIJjVOyqtA0K4gRAuZHhj5_8S0
+2026-06-01 14:54:16,696  INFO      INSERTED  venue_id=8e5f7032-7fd3-4e2f-b435-d6d81b61aad0  place_id=ChIJjVOyqtA0K4gRAuZHhj5_8S0  name=The Second City Toronto
+2026-06-01 14:54:18,531  INFO      Processing 58/381  place_id=ChIJS8Vn6ErL1IkR2xRUXE7o17o
+2026-06-01 14:54:19,066  INFO      INSERTED  venue_id=e1a944be-05f9-4823-af6d-02f12b6457f0  place_id=ChIJS8Vn6ErL1IkR2xRUXE7o17o  name=VERTIGO Toronto
+2026-06-01 14:54:21,080  INFO      Processing 59/381  place_id=ChIJN1X5-Tk0K4gRqEK6Y15A_vQ
+2026-06-01 14:54:21,366  INFO      INSERTED  venue_id=5bda16c7-1ae1-4568-8179-a3a706ee4ea8  place_id=ChIJN1X5-Tk0K4gRqEK6Y15A_vQ  name=Toronto Style Bar & Grill
+2026-06-01 14:54:22,748  INFO      Processing 60/381  place_id=ChIJ5-DByfLN1IkRvBf1RWdyyOg
+2026-06-01 14:54:23,051  INFO      INSERTED  venue_id=de75b60b-2c95-4474-9e73-9fd959f3dd12  place_id=ChIJ5-DByfLN1IkRvBf1RWdyyOg  name=Opal Lounge Toronto
+2026-06-01 14:54:24,501  INFO      Processing 61/381  place_id=ChIJzT2XBTLL1IkRgCcMc93DXNo
+2026-06-01 14:54:24,851  INFO      INSERTED  venue_id=4078a986-50a5-4153-aa99-d8e9736e5800  place_id=ChIJzT2XBTLL1IkRgCcMc93DXNo  name=P.J. O'Brien Irish Pub & Restaurant
+2026-06-01 14:54:26,652  INFO      Processing 62/381  place_id=ChIJVVZjf2I1K4gRF_UMeE6WxRU
+2026-06-01 14:54:26,953  INFO      INSERTED  venue_id=1e66a979-c65b-4e00-9917-10303ca47b4a  place_id=ChIJVVZjf2I1K4gRF_UMeE6WxRU  name=KING SOCIAL LOUNGE
+2026-06-01 14:54:28,203  INFO      Processing 63/381  place_id=ChIJcQRfbwA1K4gRIiQ4N-ChR1s
+2026-06-01 14:54:28,525  INFO      INSERTED  venue_id=78d8a8d8-db98-4998-adac-1b236a1fbd8f  place_id=ChIJcQRfbwA1K4gRIiQ4N-ChR1s  name=The 370
+2026-06-01 14:54:30,335  INFO      Processing 64/381  place_id=ChIJIdAQKnXN1IkRcMWIv-8GJ0E
+2026-06-01 14:54:30,615  INFO      INSERTED  venue_id=ba33c833-0b14-4b8e-a43e-b29e2eb09231  place_id=ChIJIdAQKnXN1IkRcMWIv-8GJ0E  name=Greenlight Comedy Productions
+2026-06-01 14:54:32,747  INFO      Processing 65/381  place_id=ChIJMbYipv40K4gR9AED85vYDHo
+2026-06-01 14:54:33,004  INFO      INSERTED  venue_id=9f714e79-56e9-4150-86c7-d500b7c50946  place_id=ChIJMbYipv40K4gR9AED85vYDHo  name=Reposado Bar & Lounge
+2026-06-01 14:54:34,987  INFO      Processing 66/381  place_id=ChIJm6h4Tvk0K4gREZbXp10Oouk
+2026-06-01 14:54:35,301  INFO      INSERTED  venue_id=e08775b8-82c7-450c-8bfc-5be16e44defc  place_id=ChIJm6h4Tvk0K4gREZbXp10Oouk  name=The Painted Lady
+2026-06-01 14:54:36,588  INFO      Processing 67/381  place_id=ChIJYSHz9tE0K4gRAQYATdeRpRw
+2026-06-01 14:54:36,931  INFO      INSERTED  venue_id=83e1ae0f-9398-4175-bd8e-3a96970d91a5  place_id=ChIJYSHz9tE0K4gRAQYATdeRpRw  name=Soho House Toronto
+2026-06-01 14:54:39,241  INFO      Processing 68/381  place_id=ChIJXQ3fe5M1K4gRhuy9ctns_Qc
+2026-06-01 14:54:39,565  INFO      INSERTED  venue_id=fd56a609-9c52-4dda-9701-93f262360018  place_id=ChIJXQ3fe5M1K4gRhuy9ctns_Qc  name=Aitch Cocktail Bar & Lounge
+2026-06-01 14:54:41,737  INFO      Processing 69/381  place_id=ChIJQxWQCwA1K4gRol-CoEDUBUU
+2026-06-01 14:54:42,044  INFO      INSERTED  venue_id=819f5c1b-1b3e-484d-8137-4558e7d9ec70  place_id=ChIJQxWQCwA1K4gRol-CoEDUBUU  name=Civil Works
+2026-06-01 14:54:43,688  INFO      Processing 70/381  place_id=ChIJfxVMBpE1K4gRcUuJvtOJ7_U
+2026-06-01 14:54:43,936  INFO      INSERTED  venue_id=801c54f8-60a8-42ca-833e-74d7c4461843  place_id=ChIJfxVMBpE1K4gRcUuJvtOJ7_U  name=Pyramid Shisha Lounge
+2026-06-01 14:54:45,483  INFO      Processing 71/381  place_id=ChIJ0ZKQwNE0K4gRoXARYglzPEk
+2026-06-01 14:54:45,828  INFO      INSERTED  venue_id=52272719-67e3-4618-86f1-7bb87175307e  place_id=ChIJ0ZKQwNE0K4gRoXARYglzPEk  name=Cake Bar & Nightclub
+2026-06-01 14:54:47,907  INFO      Processing 72/381  place_id=ChIJ_UAgJRE1K4gRjH61bXK6pF4
+2026-06-01 14:54:48,170  INFO      INSERTED  venue_id=f3a1d065-0a38-42b3-82ea-3c163983f5c6  place_id=ChIJ_UAgJRE1K4gRjH61bXK6pF4  name=CKTL & Co.
+2026-06-01 14:54:50,025  INFO      Processing 73/381  place_id=ChIJHyF80tY0K4gRoKtsry2Pqys
+2026-06-01 14:54:50,274  INFO      INSERTED  venue_id=83175a2f-f7ea-4918-a29f-c206d2b88ba0  place_id=ChIJHyF80tY0K4gRoKtsry2Pqys  name=Glenn Gould Studio
+2026-06-01 14:54:52,132  INFO      Processing 74/381  place_id=ChIJgdV1CgDL1IkR2uVFYx6fMfU
+2026-06-01 14:54:52,383  INFO      INSERTED  venue_id=bbbabefa-01e9-420b-bece-31dd66b300e3  place_id=ChIJgdV1CgDL1IkR2uVFYx6fMfU  name=BUNKER
+2026-06-01 14:54:54,698  INFO      Processing 75/381  place_id=ChIJq6pG2do0K4gRUiLKjtSh4fk
+2026-06-01 14:54:55,281  INFO      INSERTED  venue_id=ac5307d6-ff4a-4fb9-b46e-6a6c3e15765a  place_id=ChIJq6pG2do0K4gRUiLKjtSh4fk  name=Soluna Toronto
+2026-06-01 14:54:57,292  INFO      Processing 76/381  place_id=ChIJZ0uJg680K4gRFd2fWmuKpQA
+2026-06-01 14:54:57,551  INFO      INSERTED  venue_id=b366ebeb-63fa-4d21-bdf5-d828e57b1f7e  place_id=ChIJZ0uJg680K4gRFd2fWmuKpQA  name=Trattoria Nervosa
+2026-06-01 14:54:58,907  INFO      Processing 77/381  place_id=ChIJ1VpQ0OE1K4gR8GisHObFuB0
+2026-06-01 14:54:59,171  INFO      INSERTED  venue_id=6c481bef-81b1-4539-b8dc-a9d0a91ec349  place_id=ChIJ1VpQ0OE1K4gR8GisHObFuB0  name=222 Bar
+2026-06-01 14:55:01,295  INFO      Processing 78/381  place_id=ChIJq6qqptY0K4gR90v2Ho2x4Ns
+2026-06-01 14:55:01,574  INFO      INSERTED  venue_id=81f7787a-00f1-4239-b84a-3148b6223b9c  place_id=ChIJq6qqptY0K4gR90v2Ho2x4Ns  name=The Pint Public House
+2026-06-01 14:55:02,816  INFO      Processing 79/381  place_id=ChIJv6rKmf41K4gRTzRwuprTweE
+2026-06-01 14:55:03,130  INFO      INSERTED  venue_id=f9ca8a26-e8f5-45b8-a549-a9a2b5fe05c7  place_id=ChIJv6rKmf41K4gRTzRwuprTweE  name=BAR ZUNKO & KARAOKE
+2026-06-01 14:55:04,895  INFO      Processing 80/381  place_id=ChIJs8v3S9k0K4gRN4P9zGYpo2M
+2026-06-01 14:55:05,233  INFO      INSERTED  venue_id=34af842a-fc13-4001-a7e1-58790897afcc  place_id=ChIJs8v3S9k0K4gRN4P9zGYpo2M  name=Baro
+2026-06-01 14:55:07,401  INFO      Processing 81/381  place_id=ChIJjzhCLqM1K4gRzjbjdPsaXXc
+2026-06-01 14:55:07,900  INFO      INSERTED  venue_id=07a43a9f-64df-410d-8543-3d92734d46d8  place_id=ChIJjzhCLqM1K4gRzjbjdPsaXXc  name=Society Clubhouse
+2026-06-01 14:55:09,633  INFO      Processing 82/381  place_id=ChIJT9j-Xow1K4gRK7bEP2emGPA
+2026-06-01 14:55:09,959  INFO      INSERTED  venue_id=9dfc1559-18fb-4123-b27f-208759fbcf71  place_id=ChIJT9j-Xow1K4gRK7bEP2emGPA  name=Oche King West
+2026-06-01 14:55:11,496  INFO      Processing 83/381  place_id=ChIJi0GJ1d80K4gRFJurliQjY80
+2026-06-01 14:55:11,750  INFO      INSERTED  venue_id=12429afd-2d8f-4e28-b610-c9a8428d7d43  place_id=ChIJi0GJ1d80K4gRFJurliQjY80  name=Door Three
+2026-06-01 14:55:13,064  INFO      Processing 84/381  place_id=ChIJ9y-dotI0K4gR8C-CfDq_pm8
+2026-06-01 14:55:13,330  INFO      INSERTED  venue_id=061d675b-9df1-49d1-aff1-a8b171f6627d  place_id=ChIJ9y-dotI0K4gR8C-CfDq_pm8  name=King Taps First Canadian Place
+2026-06-01 14:55:14,638  INFO      Processing 85/381  place_id=ChIJ63EPBdA0K4gRQjRjf_xeszA
+2026-06-01 14:55:14,908  INFO      INSERTED  venue_id=4a0b8094-7860-4aff-a5a8-d79f83c33556  place_id=ChIJ63EPBdA0K4gRQjRjf_xeszA  name=The Friar: A Firkin Pub
+2026-06-01 14:55:16,725  INFO      Processing 86/381  place_id=ChIJc3I0RwA1K4gRfHlCCpeCaec
+2026-06-01 14:55:17,281  INFO      INSERTED  venue_id=2548dab0-3895-49cb-9396-bfa7f3649f8a  place_id=ChIJc3I0RwA1K4gRfHlCCpeCaec  name=Blessing in Disguise Bistro and Pub Toronto
+2026-06-01 14:55:19,416  INFO      Processing 87/381  place_id=ChIJf9cKVwc1K4gRqpgFYd4vwc4
+2026-06-01 14:55:19,670  INFO      INSERTED  venue_id=01bbb089-0e43-415b-b49f-a8b22caecae4  place_id=ChIJf9cKVwc1K4gRqpgFYd4vwc4  name=Melrose On Adelaide
+2026-06-01 14:55:20,924  INFO      Processing 88/381  place_id=ChIJ2Qy7RDPL1IkRohwFrAYwafs
+2026-06-01 14:55:21,181  INFO      INSERTED  venue_id=5e35be80-f30b-45b6-879f-7551c1e99404  place_id=ChIJ2Qy7RDPL1IkRohwFrAYwafs  name=Elgin & Winter Garden Theatres
+2026-06-01 14:55:23,756  INFO      Processing 89/381  place_id=ChIJt8EMLG01K4gRAE3QF2g8Zw8
+2026-06-01 14:55:24,084  INFO      INSERTED  venue_id=a273c5b7-7063-4301-8894-900b6bc0424e  place_id=ChIJt8EMLG01K4gRAE3QF2g8Zw8  name=The Little Jerry
+2026-06-01 14:55:25,853  INFO      Processing 90/381  place_id=ChIJhW1uRmzL1IkRfyD-EsPSqeU
+2026-06-01 14:55:26,215  INFO      INSERTED  venue_id=b6a483a4-3ad6-4d30-8dab-c86baaedd13f  place_id=ChIJhW1uRmzL1IkRfyD-EsPSqeU  name=The Rooftop
+2026-06-01 14:55:27,968  INFO      Processing 91/381  place_id=ChIJ2bw98Iw0K4gREUkdTM4qwmU
+2026-06-01 14:55:28,303  INFO      INSERTED  venue_id=b1657ca4-90fd-413a-9339-b3b6a4ba4944  place_id=ChIJ2bw98Iw0K4gREUkdTM4qwmU  name=Gorhe Gorhe Karaoke
+2026-06-01 14:55:29,565  INFO      Processing 92/381  place_id=ChIJ39UA4THL1IkRh991sJ1_LIs
+2026-06-01 14:55:29,889  INFO      INSERTED  venue_id=8c547a67-7692-473a-96f2-91ecd4463588  place_id=ChIJ39UA4THL1IkRh991sJ1_LIs  name=C’est What? Inc.
+2026-06-01 14:55:31,641  INFO      Processing 93/381  place_id=ChIJ8XKLRtM0K4gRESIIvORrqAY
+2026-06-01 14:55:31,978  INFO      INSERTED  venue_id=ab32ef6a-bcdc-4bb0-b537-3859d9a7206b  place_id=ChIJ8XKLRtM0K4gRESIIvORrqAY  name=VIA One Lounge
+2026-06-01 14:55:34,563  INFO      Processing 94/381  place_id=ChIJwSfKme40K4gRxoeQD9wP7OQ
+2026-06-01 14:55:35,146  INFO      INSERTED  venue_id=9c877b66-6ef2-4487-b78c-6935e346d525  place_id=ChIJwSfKme40K4gRxoeQD9wP7OQ  name=Bar Raval
+2026-06-01 14:55:36,892  INFO      Processing 95/381  place_id=ChIJ14ioxC3L1IkRHbPSNMGmdIw
+2026-06-01 14:55:37,224  INFO      INSERTED  venue_id=70446a93-9565-4559-92f4-b26264b6f2c4  place_id=ChIJ14ioxC3L1IkRHbPSNMGmdIw  name=St. Lawrence Centre for the Arts
+2026-06-01 14:55:38,970  INFO      Processing 96/381  place_id=ChIJN-eROqU0K4gRbYJ_GdoWm9I
+2026-06-01 14:55:39,310  INFO      INSERTED  venue_id=48eebb6a-259b-4d9a-a5c9-bb92cd9ae763  place_id=ChIJN-eROqU0K4gRbYJ_GdoWm9I  name=Exhibit Residences Exhibit Condominiums Presentation Lounge
+2026-06-01 14:55:39,316  INFO      Processing 97/381  place_id=ChIJoT46qSc1K4gRaiEwckaSG2U
+2026-06-01 14:55:39,592  INFO      INSERTED  venue_id=df0dcc65-1166-41db-b836-6fb7188eb71b  place_id=ChIJoT46qSc1K4gRaiEwckaSG2U  name=BSMT254
+2026-06-01 14:55:40,869  INFO      Processing 98/381  place_id=ChIJ-aF95gE1K4gRhiwUEqdnqIo
+2026-06-01 14:55:41,117  INFO      INSERTED  venue_id=e5431f84-26b1-4672-865d-ca92d81ad365  place_id=ChIJ-aF95gE1K4gRhiwUEqdnqIo  name=Little Italy Comedy Club
+2026-06-01 14:55:43,158  INFO      Processing 99/381  place_id=ChIJAZlCRuc0K4gRxild1bYHnew
+2026-06-01 14:55:43,487  INFO      INSERTED  venue_id=1c3016ef-7f9d-4e6d-89ff-db99f0644546  place_id=ChIJAZlCRuc0K4gRxild1bYHnew  name=The Paddock Tavern
+2026-06-01 14:55:45,376  INFO      Processing 100/381  place_id=ChIJF7hqLqY1K4gRzKaVcv5MaF4
+2026-06-01 14:55:45,620  INFO      INSERTED  venue_id=81488ed9-3df4-4c6f-9b26-96eefba8908b  place_id=ChIJF7hqLqY1K4gRzKaVcv5MaF4  name=The Moonlight Lounge
+2026-06-01 14:55:47,973  INFO      Processing 101/381  place_id=ChIJ0XWp8p_M1IkRdqRyobTpj5M
+2026-06-01 14:55:48,219  INFO      INSERTED  venue_id=3112d9a7-f5cd-4b7c-a961-1d1e79a2e642  place_id=ChIJ0XWp8p_M1IkRdqRyobTpj5M  name=Danforth Music Hall
+2026-06-01 14:55:50,287  INFO      Processing 102/381  place_id=ChIJb-aidP81K4gRZYTywUmTR98
+2026-06-01 14:55:50,549  INFO      INSERTED  venue_id=f6454526-2db6-4611-83ae-218519fd3f5c  place_id=ChIJb-aidP81K4gRZYTywUmTR98  name=VIA Business Lounge
+2026-06-01 14:55:52,899  INFO      Processing 103/381  place_id=ChIJ_46waoU1K4gRyIEoeuOq0-w
+2026-06-01 14:55:53,145  INFO      INSERTED  venue_id=50a0f572-6a98-4970-bc69-f2e18957bbb3  place_id=ChIJ_46waoU1K4gRyIEoeuOq0-w  name=Sky Skate at The Porch
+2026-06-01 14:55:54,716  INFO      Processing 104/381  place_id=ChIJw4YZdbrL1IkRqqzP0ul-aa8
+2026-06-01 14:55:55,032  INFO      INSERTED  venue_id=c760e230-4e45-49db-9602-00b92c0218d4  place_id=ChIJw4YZdbrL1IkRqqzP0ul-aa8  name=Gusto 501
+2026-06-01 14:55:56,712  INFO      Processing 105/381  place_id=ChIJKRxf-8o0K4gRDb2SihszZCg
+2026-06-01 14:55:57,027  ERROR     ERROR processing place_id=ChIJKRxf-8o0K4gRDb2SihszZCg — rolled back.
+Traceback (most recent call last):
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/01_google_places.py", line 414, in run
+    action = process_place(conn, place)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/01_google_places.py", line 377, in process_place
+    venue_id = upsert_venue(conn, venue_dict)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/../db.py", line 105, in upsert_venue
+    cur.execute(sql, params)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/psycopg2/extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "venue_slug_key"
+DETAIL:  Key (slug)=(st-louis-bar-grill) already exists.
+
+2026-06-01 14:55:57,032  INFO      Processing 106/381  place_id=ChIJcbZF0Bg1K4gROD3Ymk-q3s8
+2026-06-01 14:55:57,297  INFO      INSERTED  venue_id=658d0231-faaa-405f-bb9d-e70907b6c3cb  place_id=ChIJcbZF0Bg1K4gROD3Ymk-q3s8  name=Isabelle's
+2026-06-01 14:55:58,704  INFO      Processing 107/381  place_id=ChIJteuQp800K4gRIlFxL3GoeU8
+2026-06-01 14:55:58,966  INFO      INSERTED  venue_id=0c9b5416-2629-47f7-9945-282288a4a0ed  place_id=ChIJteuQp800K4gRIlFxL3GoeU8  name=Cambridge Club
+2026-06-01 14:56:00,482  INFO      Processing 108/381  place_id=ChIJC3FKfd41K4gRMJwprlMFuUM
+2026-06-01 14:56:00,991  INFO      INSERTED  venue_id=eaa55627-58c7-47a2-ab12-3ef5d3d0a051  place_id=ChIJC3FKfd41K4gRMJwprlMFuUM  name=Slice of Life
+2026-06-01 14:56:03,320  INFO      Processing 109/381  place_id=ChIJrePR9grL1IkRKA3hEd6MlUo
+2026-06-01 14:56:03,607  INFO      INSERTED  venue_id=25662322-cf76-47df-8e90-3e2e2519e90d  place_id=ChIJrePR9grL1IkRKA3hEd6MlUo  name=Egg Club Dundas
+2026-06-01 14:56:05,172  INFO      Processing 110/381  place_id=ChIJHUs0vJ01K4gRys6H5F8MkGY
+2026-06-01 14:56:05,492  INFO      INSERTED  venue_id=2dd1f3da-6b56-498e-842b-c9da92210c7a  place_id=ChIJHUs0vJ01K4gRys6H5F8MkGY  name=44 Toronto
+2026-06-01 14:56:06,787  INFO      Processing 111/381  place_id=ChIJn12YrjTL1IkRVG1CkjAmQYg
+2026-06-01 14:56:07,114  INFO      INSERTED  venue_id=fb4eb9af-e369-4355-a00f-287d860124fe  place_id=ChIJn12YrjTL1IkRVG1CkjAmQYg  name=Sweat and Tonic
+2026-06-01 14:56:08,371  INFO      Processing 112/381  place_id=ChIJ19HF1vpSV0ARhuyTtUxBggk
+2026-06-01 14:56:09,182  INFO      INSERTED  venue_id=1d42965f-cd10-4fc1-92fe-00dc20fa132c  place_id=ChIJ19HF1vpSV0ARhuyTtUxBggk  name=Town Crier
+2026-06-01 14:56:10,522  INFO      Processing 113/381  place_id=ChIJ_-6zojTL1IkRWYkSsbveKH8
+2026-06-01 14:56:10,786  INFO      INSERTED  venue_id=e4b6c3e4-c5ce-4260-bfd9-0f32da418934  place_id=ChIJ_-6zojTL1IkRWYkSsbveKH8  name=Massey Hall
+2026-06-01 14:56:11,988  INFO      Processing 114/381  place_id=ChIJuz_0-iQ1K4gRjzanck2HrZ8
+2026-06-01 14:56:12,336  INFO      INSERTED  venue_id=e69bce42-94e0-445e-af8e-47eae05a41fd  place_id=ChIJuz_0-iQ1K4gRjzanck2HrZ8  name=Hana Don Japanese Cuisine & Bar
+2026-06-01 14:56:13,887  INFO      Processing 115/381  place_id=ChIJk4T82zTL1IkRBR2qH4DZzDU
+2026-06-01 14:56:14,164  INFO      INSERTED  venue_id=bf3a0043-4d47-4bdb-b938-5ab753748d55  place_id=ChIJk4T82zTL1IkRBR2qH4DZzDU  name=Jazz Bistro
+2026-06-01 14:56:15,972  INFO      Processing 116/381  place_id=ChIJw5WNDSs1K4gRT3b1nankGhY
+2026-06-01 14:56:16,534  INFO      INSERTED  venue_id=b27b6e7b-d055-4958-b6ea-ed31bbd1d144  place_id=ChIJw5WNDSs1K4gRT3b1nankGhY  name=Junction Underground
+2026-06-01 14:56:17,792  INFO      Processing 117/381  place_id=ChIJucwpCsM0K4gRMSHSwGMhj5A
+2026-06-01 14:56:18,125  INFO      INSERTED  venue_id=3d489c9c-ecab-4d05-b749-f7a2bd59d819  place_id=ChIJucwpCsM0K4gRMSHSwGMhj5A  name=8090Karaoke
+2026-06-01 14:56:19,657  INFO      Processing 118/381  place_id=ChIJE5Y2DybL1IkRMfFY8SRexV0
+2026-06-01 14:56:19,939  INFO      INSERTED  venue_id=c5de193c-5035-4699-9a7c-50ee9fa81d1a  place_id=ChIJE5Y2DybL1IkRMfFY8SRexV0  name=Red Sea Shisha Lounge
+2026-06-01 14:56:21,757  INFO      Processing 119/381  place_id=ChIJ3Ruu_zHL1IkRzgFxJbztyWQ
+2026-06-01 14:56:22,009  INFO      INSERTED  venue_id=1df5b72b-e0b8-40aa-9ce7-3b8ae2f3ceb7  place_id=ChIJ3Ruu_zHL1IkRzgFxJbztyWQ  name=The Reservoir Lounge
+2026-06-01 14:56:23,552  INFO      Processing 120/381  place_id=ChIJZwbJIEY1K4gRbkaK6Ycu4uE
+2026-06-01 14:56:24,489  INFO      INSERTED  venue_id=535c912c-d66a-4c5a-af44-16bb028568c2  place_id=ChIJZwbJIEY1K4gRbkaK6Ycu4uE  name=Ultraviolet
+2026-06-01 14:56:26,587  INFO      Processing 121/381  place_id=ChIJm0p7Jh41K4gRejqcY2xf-BY
+2026-06-01 14:56:26,915  INFO      INSERTED  venue_id=25ca8e8e-5535-4d05-b8d4-ac454da35e82  place_id=ChIJm0p7Jh41K4gRejqcY2xf-BY  name=Royal Lounge
+2026-06-01 14:56:28,294  INFO      Processing 122/381  place_id=ChIJPSpa4NI1K4gRee-K9fTTlp4
+2026-06-01 14:56:28,620  INFO      INSERTED  venue_id=a26ae01b-887b-420a-a23b-18d07aa04222  place_id=ChIJPSpa4NI1K4gRee-K9fTTlp4  name=Saint John's Tavern
+2026-06-01 14:56:30,160  INFO      Processing 123/381  place_id=ChIJWYMdhdM0K4gRbMQqRvZfb3c
+2026-06-01 14:56:30,686  INFO      INSERTED  venue_id=83a28ece-44a1-4a7f-bd42-876c3c1eb0e0  place_id=ChIJWYMdhdM0K4gRbMQqRvZfb3c  name=Loose Moose / Antler Room
+2026-06-01 14:56:32,240  INFO      Processing 124/381  place_id=ChIJy_Jtxg0tK4gRQXUFTeQAIdE
+2026-06-01 14:56:32,535  INFO      INSERTED  venue_id=5df7f550-b32e-4092-9137-ea3a0f8b9e83  place_id=ChIJy_Jtxg0tK4gRQXUFTeQAIdE  name=Shout Karaoke
+2026-06-01 14:56:34,043  INFO      Processing 125/381  place_id=ChIJJewfRs00K4gRxHp8X29xk1E
+2026-06-01 14:56:34,379  INFO      INSERTED  venue_id=708905df-6493-4b29-850a-4ca9e2e4cffd  place_id=ChIJJewfRs00K4gRxHp8X29xk1E  name=The National Club
+2026-06-01 14:56:35,609  INFO      Processing 126/381  place_id=ChIJf1Cd7VE0K4gRTNHW18SaJvs
+2026-06-01 14:56:36,531  INFO      INSERTED  venue_id=7e0d95fe-0c57-4183-ab1e-a5d7047e1201  place_id=ChIJf1Cd7VE0K4gRTNHW18SaJvs  name=The Baby G
+2026-06-01 14:56:37,705  INFO      Processing 127/381  place_id=ChIJe6W2xbQ0K4gRWalHW_amLts
+2026-06-01 14:56:38,068  INFO      INSERTED  venue_id=2ca44abf-0f72-47c9-8b5d-709bd06441e4  place_id=ChIJe6W2xbQ0K4gRWalHW_amLts  name=Thirty Restaurant and Lounge
+2026-06-01 14:56:39,585  INFO      Processing 128/381  place_id=ChIJo754spzL1IkRou3eMWZUPIY
+2026-06-01 14:56:39,839  INFO      INSERTED  venue_id=c904f069-09fb-4a90-b1e3-a5f60f37f936  place_id=ChIJo754spzL1IkRou3eMWZUPIY  name=The Duke
+2026-06-01 14:56:41,652  INFO      Processing 129/381  place_id=ChIJ__QVOdk0K4gRM_dEhAgM-G4
+2026-06-01 14:56:41,986  INFO      INSERTED  venue_id=c1a8eca4-cdd2-47aa-a9c5-f7676b4ecdcc  place_id=ChIJ__QVOdk0K4gRM_dEhAgM-G4  name=SPIN Toronto
+2026-06-01 14:56:43,786  INFO      Processing 130/381  place_id=ChIJtQsiS7M0K4gRgR8DOWCnDQo
+2026-06-01 14:56:44,310  INFO      INSERTED  venue_id=a6145916-4e4c-4d88-97ce-21f179a6787b  place_id=ChIJtQsiS7M0K4gRgR8DOWCnDQo  name=Crews & Tangos
+2026-06-01 14:56:46,144  INFO      Processing 131/381  place_id=ChIJPSbSq9E0K4gR9wBxLYFa2pk
+2026-06-01 14:56:46,908  INFO      INSERTED  venue_id=9e4e4d41-9564-40b6-8df5-f53ca2e5046b  place_id=ChIJPSbSq9E0K4gR9wBxLYFa2pk  name=Fiction Club
+2026-06-01 14:56:49,142  INFO      Processing 132/381  place_id=ChIJ9eYm5nM1K4gR9FajdDn5BtU
+2026-06-01 14:56:49,457  ERROR     ERROR processing place_id=ChIJ9eYm5nM1K4gR9FajdDn5BtU — rolled back.
+Traceback (most recent call last):
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/01_google_places.py", line 414, in run
+    action = process_place(conn, place)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/01_google_places.py", line 377, in process_place
+    venue_id = upsert_venue(conn, venue_dict)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/../db.py", line 105, in upsert_venue
+    cur.execute(sql, params)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/psycopg2/extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "venue_slug_key"
+DETAIL:  Key (slug)=(the-boardroom-comedy-club-toronto) already exists.
+
+2026-06-01 14:56:49,460  INFO      Processing 133/381  place_id=ChIJmT8H11bL1IkRPzPRdOhYJ5k
+2026-06-01 14:56:49,751  INFO      INSERTED  venue_id=33b4574d-a1c6-48e6-9fc7-df237b05348c  place_id=ChIJmT8H11bL1IkRPzPRdOhYJ5k  name=Tenjin Karaoke Bar
+2026-06-01 14:56:51,637  INFO      Processing 134/381  place_id=ChIJ20tc0VM1K4gRBLGy0cKlv0U
+2026-06-01 14:56:51,886  INFO      INSERTED  venue_id=ceaab99d-60cc-44d1-bddb-eda89d417a99  place_id=ChIJ20tc0VM1K4gRBLGy0cKlv0U  name=Empire Toronto
+2026-06-01 14:56:54,334  INFO      Processing 135/381  place_id=ChIJPwCavhk1K4gRmtZEcsQCznM
+2026-06-01 14:56:54,856  INFO      INSERTED  venue_id=039a41ba-4c46-4fff-9612-ee0882ad9202  place_id=ChIJPwCavhk1K4gRmtZEcsQCznM  name=The Jean Darlene Piano Room
+2026-06-01 14:56:56,361  INFO      Processing 136/381  place_id=ChIJ4Wd_uVA1K4gRI3l0VPL6ilY
+2026-06-01 14:56:56,652  INFO      INSERTED  venue_id=a6026e6c-b757-4fbb-bc08-9841d8530b1b  place_id=ChIJ4Wd_uVA1K4gRI3l0VPL6ilY  name=Bar Karma
+2026-06-01 14:56:58,209  INFO      Processing 137/381  place_id=ChIJB57NFAs1K4gRJOwDXvevCOY
+2026-06-01 14:56:58,510  INFO      INSERTED  venue_id=917ce433-26f5-4018-84bb-7692bdda26be  place_id=ChIJB57NFAs1K4gRJOwDXvevCOY  name=DPRTMNT
+2026-06-01 14:56:59,726  INFO      Processing 138/381  place_id=ChIJ75v7n9g1K4gRA1m0-X0jXBE
+2026-06-01 14:57:00,051  INFO      INSERTED  venue_id=6bef6dea-090f-48e8-8ae6-d78ba6f02b55  place_id=ChIJ75v7n9g1K4gRA1m0-X0jXBE  name=Momentos Toronto
+2026-06-01 14:57:01,590  INFO      Processing 139/381  place_id=ChIJqyTGRqU0K4gRMmMQTiN6cR8
+2026-06-01 14:57:01,841  INFO      INSERTED  venue_id=1fa39038-40ba-4b77-99ae-c07e427d9e22  place_id=ChIJqyTGRqU0K4gRMmMQTiN6cR8  name=Hemingway's Restaurant and Bar
+2026-06-01 14:57:03,163  INFO      Processing 140/381  place_id=ChIJUfe25Iw0K4gRYPwKH9u7I5U
+2026-06-01 14:57:03,426  INFO      INSERTED  venue_id=f969ac75-34e7-4ad4-ac03-4bd8fd05a8a7  place_id=ChIJUfe25Iw0K4gRYPwKH9u7I5U  name=Echo Karaoke On Bloor
+2026-06-01 14:57:04,775  INFO      Processing 141/381  place_id=ChIJZ92RgK41K4gRnDgjM5hN6-A
+2026-06-01 14:57:05,023  INFO      INSERTED  venue_id=c3aa337f-4782-4f97-99db-00a3a562cdeb  place_id=ChIJZ92RgK41K4gRnDgjM5hN6-A  name=Toronto Comedy All Stars
+2026-06-01 14:57:06,552  INFO      Processing 142/381  place_id=ChIJYcntS701K4gRwvMXnMi-2mQ
+2026-06-01 14:57:06,900  INFO      INSERTED  venue_id=97542646-6dc8-4c5e-ad3d-ac35b2e8225d  place_id=ChIJYcntS701K4gRwvMXnMi-2mQ  name=Forever Karaoke
+2026-06-01 14:57:08,422  INFO      Processing 143/381  place_id=ChIJwflzdkM1K4gRQvqGxZZhHv0
+2026-06-01 14:57:08,671  INFO      INSERTED  venue_id=8db0badf-f7c2-48e7-a7cf-556300898a38  place_id=ChIJwflzdkM1K4gRQvqGxZZhHv0  name=Everyside - Social Eatery & Taphouse
+2026-06-01 14:57:11,003  INFO      Processing 144/381  place_id=ChIJWcH-2zTL1IkRqB8N3YUw6-I
+2026-06-01 14:57:11,284  INFO      INSERTED  venue_id=ab6f3adb-7d32-46fc-96b4-61129b95a48d  place_id=ChIJWcH-2zTL1IkRqB8N3YUw6-I  name=The Senator
+2026-06-01 14:57:13,663  INFO      Processing 145/381  place_id=ChIJExPwzk01K4gRiTqGkRyuDAc
+2026-06-01 14:57:14,207  INFO      INSERTED  venue_id=53e64c7a-da98-4f54-b810-16f897635b0f  place_id=ChIJExPwzk01K4gRiTqGkRyuDAc  name=The Empire Strips Back: A Burlesque Parody - Toronto
+2026-06-01 14:57:16,008  INFO      Processing 146/381  place_id=ChIJn5tSzq40K4gRVKxnRpHsHj8
+2026-06-01 14:57:16,440  INFO      INSERTED  venue_id=4a448999-720a-4f07-95d5-6f3283e7f1f7  place_id=ChIJn5tSzq40K4gRVKxnRpHsHj8  name=The Concert Hall
+2026-06-01 14:57:17,804  INFO      Processing 147/381  place_id=ChIJq6rm64w0K4gR9vlYvuTpijM
+2026-06-01 14:57:18,397  INFO      INSERTED  venue_id=16ff500a-723b-45c3-8824-60d25833b78c  place_id=ChIJq6rm64w0K4gR9vlYvuTpijM  name=Freezone Karaoke
+2026-06-01 14:57:20,173  INFO      Processing 148/381  place_id=ChIJd6qMg9w0K4gRJLQ6fdW-WEU
+2026-06-01 14:57:21,173  INFO      INSERTED  venue_id=b009f25b-82ff-4609-9c44-0f3dfd9bbcfd  place_id=ChIJd6qMg9w0K4gRJLQ6fdW-WEU  name=The Cameron House
+2026-06-01 14:57:22,833  INFO      Processing 149/381  place_id=ChIJacSgpFc1K4gRA8j1UqD_4-s
+2026-06-01 14:57:23,114  INFO      INSERTED  venue_id=c403b79d-05c0-4961-9865-c2ec3ae0e415  place_id=ChIJacSgpFc1K4gRA8j1UqD_4-s  name=LoPan Bar
+2026-06-01 14:57:24,678  INFO      Processing 150/381  place_id=ChIJm7lDW9Q0K4gR1lkhfibPAjo
+2026-06-01 14:57:24,991  INFO      INSERTED  venue_id=ed2b3416-4951-40f4-9c21-50d3f4cfd363  place_id=ChIJm7lDW9Q0K4gR1lkhfibPAjo  name=Char No.5 Whisky & Cocktail Lounge
+2026-06-01 14:57:26,487  INFO      Processing 151/381  place_id=ChIJAzlRJac1K4gRl5k1WxEhZis
+2026-06-01 14:57:26,736  INFO      INSERTED  venue_id=744d18f4-6fcf-4455-9115-f5bbf1caebb2  place_id=ChIJAzlRJac1K4gRl5k1WxEhZis  name=C Suite
+2026-06-01 14:57:28,342  INFO      Processing 152/381  place_id=ChIJjei_QTc0K4gR90zfDjlq-bo
+2026-06-01 14:57:28,694  INFO      INSERTED  venue_id=c00a6b8b-39f3-48dd-b260-0640097b548c  place_id=ChIJjei_QTc0K4gR90zfDjlq-bo  name=Hugh's Room Live
+2026-06-01 14:57:30,680  INFO      Processing 153/381  place_id=ChIJ4cHb3800K4gRZRf9IDJF62o
+2026-06-01 14:57:30,953  INFO      INSERTED  venue_id=17aec965-e3bb-4663-b0df-4673001136c0  place_id=ChIJ4cHb3800K4gRZRf9IDJF62o  name=Four Seasons Centre for the Performing Arts
+2026-06-01 14:57:32,263  INFO      Processing 154/381  place_id=ChIJZeoddQA1K4gRpbv2u_KdBpc
+2026-06-01 14:57:32,512  INFO      INSERTED  venue_id=27067f98-f1e9-4231-9b11-f9aef3a5041f  place_id=ChIJZeoddQA1K4gRpbv2u_KdBpc  name=Queens Harbour
+2026-06-01 14:57:34,351  INFO      Processing 155/381  place_id=ChIJ243-C381K4gRHMKWCGU86iM
+2026-06-01 14:57:34,637  INFO      INSERTED  venue_id=421dc068-8372-4e99-b9c9-71adffe8f534  place_id=ChIJ243-C381K4gRHMKWCGU86iM  name=Black+Blue Toronto
+2026-06-01 14:57:36,413  INFO      Processing 156/381  place_id=ChIJ6SrYQmfL1IkRaGoWsh49H6c
+2026-06-01 14:57:36,990  INFO      INSERTED  venue_id=b98b8aa1-8215-4edc-996e-1394ad11c670  place_id=ChIJ6SrYQmfL1IkRaGoWsh49H6c  name=TD Music Hall
+2026-06-01 14:57:39,092  INFO      Processing 157/381  place_id=ChIJAR45GwA1K4gRkCp1XyJGGK0
+2026-06-01 14:57:39,375  INFO      INSERTED  venue_id=b079d9aa-cc5b-4caa-abd5-613ffb8703c1  place_id=ChIJAR45GwA1K4gRkCp1XyJGGK0  name=Underground
+2026-06-01 14:57:41,358  INFO      Processing 158/381  place_id=ChIJuYKNcMM0K4gRqeTmw741ikk
+2026-06-01 14:57:41,799  INFO      INSERTED  venue_id=48b531c2-f924-496d-9fa1-133f3337db18  place_id=ChIJuYKNcMM0K4gRqeTmw741ikk  name=Echo Karaoke& Bar in Dragon City
+2026-06-01 14:57:43,297  INFO      Processing 159/381  place_id=ChIJe3ydqS01K4gR5qIJ8KpYyDo
+2026-06-01 14:57:43,628  INFO      INSERTED  venue_id=793daaba-5af7-4d73-a3b2-ef851a61cb81  place_id=ChIJe3ydqS01K4gR5qIJ8KpYyDo  name=Bar 404
+2026-06-01 14:57:45,889  INFO      Processing 160/381  place_id=ChIJXXzXIPw1K4gRIaRd5fnk1pQ
+2026-06-01 14:57:46,516  INFO      INSERTED  venue_id=abaedda3-9545-4106-b716-20d352de26ef  place_id=ChIJXXzXIPw1K4gRIaRd5fnk1pQ  name=After Seven
+2026-06-01 14:57:47,954  INFO      Processing 161/381  place_id=ChIJKX92Tng1K4gRTQZy7HWa_U0
+2026-06-01 14:57:48,217  INFO      INSERTED  venue_id=6e1a87dd-303c-4536-8cd1-b5c5a97bf683  place_id=ChIJKX92Tng1K4gRTQZy7HWa_U0  name=Mia Toronto
+2026-06-01 14:57:49,834  INFO      Processing 162/381  place_id=ChIJuQ3P9E01K4gRyQ1vY1HZERM
+2026-06-01 14:57:50,193  INFO      INSERTED  venue_id=1d9dab3d-6400-4b31-bd12-c4df6d4790b0  place_id=ChIJuQ3P9E01K4gRyQ1vY1HZERM  name=One Eyed Jack Restaurant & Bar Toronto
+2026-06-01 14:57:51,675  INFO      Processing 163/381  place_id=ChIJ_QegyE7L1IkR7Wqc9Np6Qlc
+2026-06-01 14:57:51,921  INFO      INSERTED  venue_id=52f1371a-78e9-4cda-a90b-78afa05b5690  place_id=ChIJ_QegyE7L1IkR7Wqc9Np6Qlc  name=Mossop's Social House
+2026-06-01 14:57:53,424  INFO      Processing 164/381  place_id=ChIJTRkCDnHL1IkRlWH9vn2POH4
+2026-06-01 14:57:53,856  INFO      INSERTED  venue_id=895ddb2e-b8a7-4507-bf0f-1bcb47736f08  place_id=ChIJTRkCDnHL1IkRlWH9vn2POH4  name=Relax Lounge
+2026-06-01 14:57:56,381  INFO      Processing 165/381  place_id=ChIJj4QCEpI1K4gRxx3WvqqfyHU
+2026-06-01 14:57:57,011  INFO      INSERTED  venue_id=1793c48a-5172-4ff0-8f2e-959e6fdac9ba  place_id=ChIJj4QCEpI1K4gRxx3WvqqfyHU  name=K-ONE KTV
+2026-06-01 14:57:59,181  INFO      Processing 166/381  place_id=ChIJzXrOjd40K4gRGOnZK_uJpZE
+2026-06-01 14:57:59,624  INFO      INSERTED  venue_id=fba2637b-0fd2-4822-9518-3c8dc987083a  place_id=ChIJzXrOjd40K4gRGOnZK_uJpZE  name=Century
+2026-06-01 14:58:01,797  INFO      Processing 167/381  place_id=ChIJpYBUH0M1K4gRlOvozfhtW9E
+2026-06-01 14:58:02,575  INFO      INSERTED  venue_id=206823bd-da4b-49e2-b409-ab86f85abdbc  place_id=ChIJpYBUH0M1K4gRlOvozfhtW9E  name=Mister Wolf
+2026-06-01 14:58:04,479  INFO      Processing 168/381  place_id=ChIJMZUFoUY0K4gRtieMw2CD2PM
+2026-06-01 14:58:04,869  INFO      INSERTED  venue_id=378f1f7a-2d2a-4275-8986-d8b0afa962c1  place_id=ChIJMZUFoUY0K4gRtieMw2CD2PM  name=Penny's
+2026-06-01 14:58:07,076  INFO      Processing 169/381  place_id=ChIJ_8ggI33M1IkR0K8kONUPSXo
+2026-06-01 14:58:08,218  INFO      INSERTED  venue_id=cc31aed7-392c-4609-8882-bb168dbdc847  place_id=ChIJ_8ggI33M1IkR0K8kONUPSXo  name=Moonlight Pub
+2026-06-01 14:58:10,689  INFO      Processing 170/381  place_id=ChIJi6Ta8jLL1IkRzzQWPcDj0KQ
+2026-06-01 14:58:11,049  INFO      INSERTED  venue_id=02215793-2b8d-431a-bcc3-4ddb60d673e6  place_id=ChIJi6Ta8jLL1IkRzzQWPcDj0KQ  name=CRAFT Beer Market Toronto
+2026-06-01 14:58:12,880  INFO      Processing 171/381  place_id=ChIJI_4YwAI1K4gRUyNiessBUdg
+2026-06-01 14:58:13,267  INFO      INSERTED  venue_id=39419610-044a-4bde-b30b-163c65194765  place_id=ChIJI_4YwAI1K4gRUyNiessBUdg  name=Aspire Lounge Air Canada Cafe
+2026-06-01 14:58:14,740  INFO      Processing 172/381  place_id=ChIJTYMhtUo1K4gRGNeIJwxMXPU
+2026-06-01 14:58:15,402  INFO      INSERTED  venue_id=d10cae5b-405a-4b75-9169-a268da934e2b  place_id=ChIJTYMhtUo1K4gRGNeIJwxMXPU  name=Nobu Bar & Lounge Toronto
+2026-06-01 14:58:17,558  INFO      Processing 173/381  place_id=ChIJcQGmZDLL1IkR5bU0JChM464
+2026-06-01 14:58:17,977  INFO      INSERTED  venue_id=98178aaa-287d-49b9-ae23-5e09d04561f4  place_id=ChIJcQGmZDLL1IkR5bU0JChM464  name=Beerbistro
+2026-06-01 14:58:19,254  INFO      Processing 174/381  place_id=ChIJXWfC56Y1K4gRw7YsAy_G2ak
+2026-06-01 14:58:19,541  ERROR     ERROR processing place_id=ChIJXWfC56Y1K4gRw7YsAy_G2ak — rolled back.
+Traceback (most recent call last):
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/01_google_places.py", line 414, in run
+    action = process_place(conn, place)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/01_google_places.py", line 377, in process_place
+    venue_id = upsert_venue(conn, venue_dict)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/../db.py", line 105, in upsert_venue
+    cur.execute(sql, params)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/psycopg2/extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "venue_slug_key"
+DETAIL:  Key (slug)=(the-well) already exists.
+
+2026-06-01 14:58:19,542  INFO      Processing 175/381  place_id=ChIJt7OCSivL1IkRqoZxo87YSYc
+2026-06-01 14:58:20,072  INFO      INSERTED  venue_id=ed626143-aa61-42a1-99b7-882c9252d8bc  place_id=ChIJt7OCSivL1IkRqoZxo87YSYc  name=Real Sports Bar & Grill
+2026-06-01 14:58:21,555  INFO      Processing 176/381  place_id=ChIJlf6RRck0K4gRuRdFhZ_xoOg
+2026-06-01 14:58:21,805  INFO      INSERTED  venue_id=47e44f27-bbdd-426a-ad8a-66f9836331c9  place_id=ChIJlf6RRck0K4gRuRdFhZ_xoOg  name=Hong Shing Restaurant
+2026-06-01 14:58:23,125  INFO      Processing 177/381  place_id=ChIJO3jfR6I1K4gRhb1zs1rs06E
+2026-06-01 14:58:23,563  INFO      INSERTED  venue_id=6d28e65b-e8b4-473e-adbe-5d8de18ca5fc  place_id=ChIJO3jfR6I1K4gRhb1zs1rs06E  name=Harriet's Rooftop
+2026-06-01 14:58:25,887  INFO      Processing 178/381  place_id=ChIJSXT5Ids0K4gRsDMq7GUdC44
+2026-06-01 14:58:26,464  INFO      INSERTED  venue_id=133c9edd-fe46-4a90-ad36-55eebde3df51  place_id=ChIJSXT5Ids0K4gRsDMq7GUdC44  name=Rivoli Toronto
+2026-06-01 14:58:28,875  INFO      Processing 179/381  place_id=ChIJu7jbC7U1K4gR4DKZBWOEBqM
+2026-06-01 14:58:29,162  INFO      INSERTED  venue_id=b9ee5742-18dc-4bbb-97cf-0950b79f4cd1  place_id=ChIJu7jbC7U1K4gR4DKZBWOEBqM  name=The Comfort Zone
+2026-06-01 14:58:30,475  INFO      Processing 180/381  place_id=ChIJqQg87u01K4gRFsfSzqJwpeI
+2026-06-01 14:58:30,893  INFO      INSERTED  venue_id=44522da8-b8b2-4604-a59c-c617ecf62067  place_id=ChIJqQg87u01K4gRFsfSzqJwpeI  name=Par-Tee Putt
+2026-06-01 14:58:32,222  INFO      Processing 181/381  place_id=ChIJ-z5EAcI0K4gRWvzgvGtqh88
+2026-06-01 14:58:32,682  INFO      INSERTED  venue_id=1cf5aacc-888a-4a39-8414-a0d5cac33899  place_id=ChIJ-z5EAcI0K4gRWvzgvGtqh88  name=Poetry Jazz Cafe
+2026-06-01 14:58:35,165  INFO      Processing 182/381  place_id=ChIJmxWHez41K4gRlPPjVLS0wrc
+2026-06-01 14:58:35,473  INFO      INSERTED  venue_id=d26b3282-454e-4643-809d-281f5e482d39  place_id=ChIJmxWHez41K4gRlPPjVLS0wrc  name=Backroom Comedy Club
+2026-06-01 14:58:37,268  INFO      Processing 183/381  place_id=ChIJv6F6Usw0K4gRQt20A8k3Jws
+2026-06-01 14:58:37,516  INFO      INSERTED  venue_id=3d7bed00-50cf-4749-ad18-2683bb0f5b2e  place_id=ChIJv6F6Usw0K4gRQt20A8k3Jws  name=The Carbon Bar
+2026-06-01 14:58:38,869  INFO      Processing 184/381  place_id=ChIJP57_08o0K4gRb5wxYHksZN8
+2026-06-01 14:58:39,466  INFO      INSERTED  venue_id=cbbabc0d-8fae-441d-a517-368f749547e6  place_id=ChIJP57_08o0K4gRb5wxYHksZN8  name=The Tenor
+2026-06-01 14:58:41,060  INFO      Processing 185/381  place_id=ChIJaY3VeMM0K4gRy_nHfq2eeIM
+2026-06-01 14:58:41,675  INFO      INSERTED  venue_id=e695f010-3549-4846-a0d8-8b012b3e2168  place_id=ChIJaY3VeMM0K4gRy_nHfq2eeIM  name=B Boss Ktv
+2026-06-01 14:58:43,541  INFO      Processing 186/381  place_id=ChIJ3fRRBi7L1IkRE6LSOM0c3EM
+2026-06-01 14:58:43,832  INFO      INSERTED  venue_id=402e26f7-9f13-4029-b570-9cb801d6a10e  place_id=ChIJ3fRRBi7L1IkRE6LSOM0c3EM  name=CC Lounge and Whisky Bar
+2026-06-01 14:58:45,953  INFO      Processing 187/381  place_id=ChIJR45Un8o0K4gRaXhfFcmzn50
+2026-06-01 14:58:46,284  INFO      INSERTED  venue_id=c77a5f24-8ca2-4cbe-91d2-e5df5233ec23  place_id=ChIJR45Un8o0K4gRaXhfFcmzn50  name=Bar+ Karaoke Lounge
+2026-06-01 14:58:48,816  INFO      Processing 188/381  place_id=ChIJacwEKs80K4gRyzjOmmBEeZs
+2026-06-01 14:58:49,074  INFO      INSERTED  venue_id=75540088-d548-4f16-b4c9-31a26c695394  place_id=ChIJacwEKs80K4gRyzjOmmBEeZs  name=Sky Club Fitness Plus Spa
+2026-06-01 14:58:51,090  INFO      Processing 189/381  place_id=ChIJbwyQQYg1K4gR-6nubYDv0Pg
+2026-06-01 14:58:51,411  INFO      INSERTED  venue_id=ad2298ef-14ff-4700-89be-42486db70ce0  place_id=ChIJbwyQQYg1K4gR-6nubYDv0Pg  name=Tapestry
+2026-06-01 14:58:52,726  INFO      Processing 190/381  place_id=ChIJ0eQZORw1K4gRylq9ZDePOGs
+2026-06-01 14:58:53,194  INFO      INSERTED  venue_id=78c3c869-44e2-4eca-8f3f-a7a931b1048c  place_id=ChIJ0eQZORw1K4gRylq9ZDePOGs  name=Portland Square Toronto
+2026-06-01 14:58:55,609  INFO      Processing 191/381  place_id=ChIJN_oc5do0K4gR9D4YJkNFuXo
+2026-06-01 14:58:55,962  INFO      INSERTED  venue_id=a89107bb-0f47-4f01-8ae8-1e6efa713f3a  place_id=ChIJN_oc5do0K4gR9D4YJkNFuXo  name=Ricarda's Restaurant | Café | Event Venue
+2026-06-01 14:58:57,200  INFO      Processing 192/381  place_id=ChIJv5nrK_c0K4gRr9tO9VfJE8g
+2026-06-01 14:58:57,450  INFO      INSERTED  venue_id=f1aad879-5bf8-4912-9638-606a6407bd16  place_id=ChIJv5nrK_c0K4gRr9tO9VfJE8g  name=Revival Event Venue
+2026-06-01 14:58:59,272  INFO      Processing 193/381  place_id=ChIJm0K_t23L1IkRp_R_fHkO3q4
+2026-06-01 14:58:59,522  INFO      INSERTED  venue_id=8fe97195-f2e3-4ae4-ab9d-96d682ac5ab6  place_id=ChIJm0K_t23L1IkRp_R_fHkO3q4  name=The Opera House
+2026-06-01 14:59:00,871  INFO      Processing 194/381  place_id=ChIJ0dFUU27L1IkRfuuxaplvStY
+2026-06-01 14:59:01,491  INFO      INSERTED  venue_id=8b1c81ce-3bed-4bcd-8e65-e2cba2601002  place_id=ChIJ0dFUU27L1IkRfuuxaplvStY  name=Armada Shisha Lounge
+2026-06-01 14:59:02,954  INFO      Processing 195/381  place_id=ChIJ43RXb8E0K4gRpNM329xtxS4
+2026-06-01 14:59:03,222  INFO      INSERTED  venue_id=95c8f764-42d6-4d06-91df-5cc09f178d67  place_id=ChIJ43RXb8E0K4gRpNM329xtxS4  name=Grossman's Tavern
+2026-06-01 14:59:05,289  INFO      Processing 196/381  place_id=ChIJr_6vCeo0K4gRyGW3XWSOMb0
+2026-06-01 14:59:05,851  INFO      INSERTED  venue_id=20ab0c9d-bbf2-494f-b499-fcc56b10677f  place_id=ChIJr_6vCeo0K4gRyGW3XWSOMb0  name=Supermarket Bar and Variety
+2026-06-01 14:59:08,113  INFO      Processing 197/381  place_id=ChIJE65wodI0K4gRGHR5w5d4YPI
+2026-06-01 14:59:08,490  INFO      INSERTED  venue_id=8bb9711e-8078-4ed3-98ef-e4820f1195bb  place_id=ChIJE65wodI0K4gRGHR5w5d4YPI  name=Cactus Club Cafe
+2026-06-01 14:59:10,858  INFO      Processing 198/381  place_id=ChIJ6-AX2TLL1IkRKyaUu8mAcAY
+2026-06-01 14:59:11,447  INFO      INSERTED  venue_id=2f4d3df7-07b9-4020-bbf8-1c6ad92ec488  place_id=ChIJ6-AX2TLL1IkRKyaUu8mAcAY  name=The Chase
+2026-06-01 14:59:13,617  INFO      Processing 199/381  place_id=ChIJWQT41gE1K4gRe8wszcHaRcM
+2026-06-01 14:59:14,236  INFO      INSERTED  venue_id=19816110-c24d-46ad-ac1f-1267584ee746  place_id=ChIJWQT41gE1K4gRe8wszcHaRcM  name=The Great Hall
+2026-06-01 14:59:16,784  INFO      Processing 200/381  place_id=ChIJv3BXywk1K4gRG5pEaYF2Ekg
+2026-06-01 14:59:17,128  INFO      INSERTED  venue_id=9892fa7a-29bc-4dea-b8c8-a85e412d7cf1  place_id=ChIJv3BXywk1K4gRG5pEaYF2Ekg  name=Amore Nights
+2026-06-01 14:59:19,028  INFO      Processing 201/381  place_id=ChIJYaKNi-U1K4gRMPEeAzR9HOs
+2026-06-01 14:59:19,548  INFO      INSERTED  venue_id=5b3d3be7-e193-4bfc-8e20-29b348794925  place_id=ChIJYaKNi-U1K4gRMPEeAzR9HOs  name=Playa by Tulum
+2026-06-01 14:59:21,271  INFO      Processing 202/381  place_id=ChIJ48tqhzrL1IkRJMWkATSWsWs
+2026-06-01 14:59:21,522  INFO      INSERTED  venue_id=fe06ebd5-170a-4059-8e50-245804c4f400  place_id=ChIJ48tqhzrL1IkRJMWkATSWsWs  name=On the Rocks Restaurant Karaoke
+2026-06-01 14:59:23,406  INFO      Processing 203/381  place_id=ChIJ2xgzwJA1K4gR3rQ1rLdyZGc
+2026-06-01 14:59:23,694  INFO      INSERTED  venue_id=3dd5d729-4a56-4b6c-b276-0982fb9d3e1b  place_id=ChIJ2xgzwJA1K4gR3rQ1rLdyZGc  name=Evangeline
+2026-06-01 14:59:24,995  INFO      Processing 204/381  place_id=ChIJvUeENLM0K4gRGXIqIizEwyY
+2026-06-01 14:59:25,259  INFO      INSERTED  venue_id=ba8ac4bb-828d-487e-833f-dfa6f9608122  place_id=ChIJvUeENLM0K4gRGXIqIizEwyY  name=Church St. Garage Bar
+2026-06-01 14:59:27,049  INFO      Processing 205/381  place_id=ChIJH4LZPjrL1IkRYQZjaYDv6AI
+2026-06-01 14:59:27,305  INFO      INSERTED  venue_id=d184892c-692b-41a5-ad1e-f54ccd4f9ff7  place_id=ChIJH4LZPjrL1IkRYQZjaYDv6AI  name=Corktown Comedy
+2026-06-01 14:59:28,749  INFO      Processing 206/381  place_id=ChIJFVYTV_U0K4gR9xSrU5ym63A
+2026-06-01 14:59:29,085  INFO      INSERTED  venue_id=aa53b77d-bbe5-4825-9097-4fc20ca02d35  place_id=ChIJFVYTV_U0K4gR9xSrU5ym63A  name=Civil Liberties
+2026-06-01 14:59:30,930  INFO      Processing 207/381  place_id=ChIJp77rrN00K4gRKdj2mzu8IBI
+2026-06-01 14:59:31,275  INFO      INSERTED  venue_id=d40b2791-7304-4da6-b536-99fab4e1d371  place_id=ChIJp77rrN00K4gRKdj2mzu8IBI  name=BarChef
+2026-06-01 14:59:32,632  INFO      Processing 208/381  place_id=ChIJy00i-5c1K4gRweqoe24d4YI
+2026-06-01 14:59:32,948  INFO      INSERTED  venue_id=057775ce-22f9-4d9d-a4c2-7e28cd4e47f4  place_id=ChIJy00i-5c1K4gRweqoe24d4YI  name=MY HOUSE
+2026-06-01 14:59:34,925  INFO      Processing 209/381  place_id=ChIJA6Bf_tE0K4gRymc6da_mEbQ
+2026-06-01 14:59:35,570  INFO      INSERTED  venue_id=ca8f1b76-75ac-4228-813f-709502192246  place_id=ChIJA6Bf_tE0K4gRymc6da_mEbQ  name=Shangri-La Lobby Lounge and Bar
+2026-06-01 14:59:37,553  INFO      Processing 210/381  place_id=ChIJ38fnIQDL1IkRYJFyZhXTNTI
+2026-06-01 14:59:37,812  INFO      INSERTED  venue_id=88e3a229-f8fc-4a68-9f00-79b90bdf2bf0  place_id=ChIJ38fnIQDL1IkRYJFyZhXTNTI  name=live jazz bar
+2026-06-01 14:59:37,813  INFO      Processing 211/381  place_id=ChIJk0QIh2zM1IkRY7U3YCPiXsI
+2026-06-01 14:59:38,240  INFO      INSERTED  venue_id=63ce2525-0376-4868-a6b0-8a0ba3bf518f  place_id=ChIJk0QIh2zM1IkRY7U3YCPiXsI  name=The Groove Bar & Grill
+2026-06-01 14:59:39,885  INFO      Processing 212/381  place_id=ChIJvYK4fV40K4gRlafYgn27HfY
+2026-06-01 14:59:40,914  INFO      INSERTED  venue_id=397bdb7e-bec7-46d1-be83-b8c095b586da  place_id=ChIJvYK4fV40K4gRlafYgn27HfY  name=Paradise Theatre
+2026-06-01 14:59:42,294  INFO      Processing 213/381  place_id=ChIJXSQQ_sk1K4gRrJrPt22bLho
+2026-06-01 14:59:42,557  INFO      INSERTED  venue_id=cee848fb-22ec-4e08-9d58-24523b3daf77  place_id=ChIJXSQQ_sk1K4gRrJrPt22bLho  name=Lulu Bar Toronto
+2026-06-01 14:59:44,633  INFO      Processing 214/381  place_id=ChIJlZCNYnUzK4gRyxdkaaH2sQM
+2026-06-01 14:59:45,523  INFO      INSERTED  venue_id=4075e854-a7b9-4a6e-9fcb-ae0b4b98474f  place_id=ChIJlZCNYnUzK4gRyxdkaaH2sQM  name=Key's Stand up Comedy Club Toronto Improv Bar and Grill
+2026-06-01 14:59:47,000  INFO      Processing 215/381  place_id=ChIJJTGWAdI0K4gRDUDEGIaqOTc
+2026-06-01 14:59:47,253  INFO      INSERTED  venue_id=fbd5df56-73fd-4d23-8f8b-8b88204b2212  place_id=ChIJJTGWAdI0K4gRDUDEGIaqOTc  name=Shangri-La Toronto
+2026-06-01 14:59:48,559  INFO      Processing 216/381  place_id=ChIJ0a5GZPk0K4gRyU1W0ku7OtM
+2026-06-01 14:59:48,820  INFO      INSERTED  venue_id=a4250c19-1c09-4f26-b382-72fc2b556866  place_id=ChIJ0a5GZPk0K4gRyU1W0ku7OtM  name=Mild Afro Lounge
+2026-06-01 14:59:50,663  INFO      Processing 217/381  place_id=ChIJWwoxTLQ0K4gRgP1GEP8jLxw
+2026-06-01 14:59:50,925  INFO      INSERTED  venue_id=21c006d0-fb59-45ba-9bc2-346c373286f3  place_id=ChIJWwoxTLQ0K4gRgP1GEP8jLxw  name=Roof Top on College
+2026-06-01 14:59:52,938  INFO      Processing 218/381  place_id=ChIJy7FoiE7L1IkRwg3ARacgFlA
+2026-06-01 14:59:53,289  INFO      INSERTED  venue_id=89bd5053-b9a9-48f1-a30e-24b0efed203e  place_id=ChIJy7FoiE7L1IkRwg3ARacgFlA  name=Phoenix Concert Theatre
+2026-06-01 14:59:55,387  INFO      Processing 219/381  place_id=ChIJ1XaL5ZM0K4gRjLXrxPiu61Y
+2026-06-01 14:59:55,634  INFO      INSERTED  venue_id=16b05266-e6a9-4037-a0b5-7e142359d4c9  place_id=ChIJ1XaL5ZM0K4gRjLXrxPiu61Y  name=The Dance Cave
+2026-06-01 14:59:58,251  INFO      Processing 220/381  place_id=ChIJaX1YHdU1K4gRz4cOIFpTJ1g
+2026-06-01 14:59:59,166  INFO      INSERTED  venue_id=4449df43-f791-48a2-973a-6148b459dd1c  place_id=ChIJaX1YHdU1K4gRz4cOIFpTJ1g  name=Last Call
+2026-06-01 15:00:00,626  INFO      Processing 221/381  place_id=ChIJtY7dIMs0K4gREEfQx6rkc-A
+2026-06-01 15:00:00,887  INFO      INSERTED  venue_id=abf3dc00-90f5-4bc1-a80c-eadf43fe63c7  place_id=ChIJtY7dIMs0K4gREEfQx6rkc-A  name=JOEY Eaton Centre
+2026-06-01 15:00:02,911  INFO      Processing 222/381  place_id=ChIJ_zwaXgA1K4gR5UTB6qYy3Jc
+2026-06-01 15:00:03,248  INFO      INSERTED  venue_id=4e8979e3-4640-4ab6-8c12-bdd2d139e039  place_id=ChIJ_zwaXgA1K4gR5UTB6qYy3Jc  name=DND Toronto
+2026-06-01 15:00:04,831  INFO      Processing 223/381  place_id=ChIJyUsC3s80K4gR2Svsdtv57Es
+2026-06-01 15:00:05,109  INFO      INSERTED  venue_id=7dab7229-43b8-4920-a474-233ad8b9b2bf  place_id=ChIJyUsC3s80K4gR2Svsdtv57Es  name=El Furniture Warehouse
+2026-06-01 15:00:06,628  INFO      Processing 224/381  place_id=ChIJ4WMeS9g1K4gRWV5ijXnlTK8
+2026-06-01 15:00:07,638  INFO      INSERTED  venue_id=dd0c201b-c072-4b16-8e8e-80bb15526320  place_id=ChIJ4WMeS9g1K4gRWV5ijXnlTK8  name=SU KARAOKE BAR
+2026-06-01 15:00:09,025  INFO      Processing 225/381  place_id=ChIJJ-DsKvE0K4gRfNGE7ONVzbY
+2026-06-01 15:00:09,282  INFO      INSERTED  venue_id=a255ee3f-ef50-4297-9dbf-6480438d92b9  place_id=ChIJJ-DsKvE0K4gRfNGE7ONVzbY  name=El Convento Rico
+2026-06-01 15:00:11,958  INFO      Processing 226/381  place_id=ChIJpdjRDtI0K4gRGA6k5K-TH8E
+2026-06-01 15:00:12,275  INFO      INSERTED  venue_id=977c44f3-de12-4c57-9f46-aadea04fb7e8  place_id=ChIJpdjRDtI0K4gRGA6k5K-TH8E  name=Chop Steakhouse & Bar
+2026-06-01 15:00:13,741  INFO      Processing 227/381  place_id=ChIJCe0A4Es1K4gR9WcfMSqfkiU
+2026-06-01 15:00:14,550  INFO      INSERTED  venue_id=a3ee6cde-9285-47f2-9866-be5a8e2695e3  place_id=ChIJCe0A4Es1K4gR9WcfMSqfkiU  name=Lounge @ Cineplex
+2026-06-01 15:00:15,316  INFO      Processing 228/381  place_id=ChIJ776RYi81K4gRGlicNWd6v1k
+2026-06-01 15:00:15,950  INFO      INSERTED  venue_id=8c32f822-3097-4572-be08-4d9a3247b445  place_id=ChIJ776RYi81K4gRGlicNWd6v1k  name=Toronto Club
+2026-06-01 15:00:16,283  INFO      Processing 229/381  place_id=ChIJ73LbbhTL1IkRo0jIEIs3HaI
+2026-06-01 15:00:17,102  INFO      INSERTED  venue_id=38f620ec-3252-4398-9d5c-1b4d0abedcad  place_id=ChIJ73LbbhTL1IkRo0jIEIs3HaI  name=JOEY King St
+2026-06-01 15:00:19,216  INFO      Processing 230/381  place_id=ChIJQdhOZvjL1IkRy2LM3m99vOg
+2026-06-01 15:00:19,629  INFO      INSERTED  venue_id=7bff52f4-aebe-4919-841b-451351522780  place_id=ChIJQdhOZvjL1IkRy2LM3m99vOg  name=Twilight Cafe & Bar DT (Dundas)
+2026-06-01 15:00:21,279  INFO      Processing 231/381  place_id=ChIJ7YBtr9A0K4gRF7VB82qBGJE
+2026-06-01 15:00:21,824  INFO      INSERTED  venue_id=bf31522c-56b8-46ec-b27f-8399e00db8eb  place_id=ChIJ7YBtr9A0K4gRF7VB82qBGJE  name=Rooftop at Le Germain Mercer
+2026-06-01 15:00:21,828  INFO      Processing 232/381  place_id=ChIJK2lqhdM0K4gRRLfXBys5VBc
+2026-06-01 15:00:22,241  INFO      INSERTED  venue_id=1a98078b-a328-4118-a7c4-532f5c1ccbaa  place_id=ChIJK2lqhdM0K4gRRLfXBys5VBc  name=Jack Astor's Bar & Grill Front Street
+2026-06-01 15:00:24,434  INFO      Processing 233/381  place_id=ChIJ5V02ks00K4gRYYwaCejHhEE
+2026-06-01 15:00:24,979  INFO      INSERTED  venue_id=8d12b29d-fd69-4904-b723-7eaeaaadffa8  place_id=ChIJ5V02ks00K4gRYYwaCejHhEE  name=The Keg Steakhouse + Bar - York Street
+2026-06-01 15:00:26,538  INFO      Processing 234/381  place_id=ChIJkSvzyMnL1IkRsSsfJlzCqXY
+2026-06-01 15:00:26,977  INFO      INSERTED  venue_id=53312b0d-cbf8-4e65-8718-3dca554a6270  place_id=ChIJkSvzyMnL1IkRsSsfJlzCqXY  name=Toronto Jazz Collective (Studio)
+2026-06-01 15:00:27,004  INFO      Processing 235/381  place_id=ChIJo6YcMgA1K4gRIqc0cGxLS7s
+2026-06-01 15:00:27,306  INFO      INSERTED  venue_id=44edfeec-b439-42f6-94fc-dd7fc99ccba0  place_id=ChIJo6YcMgA1K4gRIqc0cGxLS7s  name=Baby's
+2026-06-01 15:00:28,657  INFO      Processing 236/381  place_id=ChIJA_KadHTL1IkRJTYLAXMInuY
+2026-06-01 15:00:29,055  INFO      INSERTED  venue_id=8ad7043d-bafb-4774-8ab6-94dde0adc77e  place_id=ChIJA_KadHTL1IkRJTYLAXMInuY  name=Candlelight Concerts
+2026-06-01 15:00:30,529  INFO      Processing 237/381  place_id=ChIJsa03siE1K4gR9YforP5OcnU
+2026-06-01 15:00:30,777  INFO      INSERTED  venue_id=2d39e1eb-c927-47ff-8c05-8a93eea48da9  place_id=ChIJsa03siE1K4gR9YforP5OcnU  name=Alder
+2026-06-01 15:00:32,742  INFO      Processing 238/381  place_id=ChIJQ1S8qcE0K4gRFe0lHDSN7KU
+2026-06-01 15:00:33,403  INFO      INSERTED  venue_id=65ce2d51-89b8-4749-a84a-3fcf2abc0eed  place_id=ChIJQ1S8qcE0K4gRFe0lHDSN7KU  name=El Mocambo
+2026-06-01 15:00:34,733  INFO      Processing 239/381  place_id=ChIJU5PajlE0K4gR2DFfnGb6rOg
+2026-06-01 15:00:34,987  INFO      INSERTED  venue_id=368efc4b-0622-4486-b565-0f9c5c83599f  place_id=ChIJU5PajlE0K4gR2DFfnGb6rOg  name=Lula Lounge
+2026-06-01 15:00:37,363  INFO      Processing 240/381  place_id=ChIJ0e9cN9o0K4gRcUnXpTUXTP4
+2026-06-01 15:00:37,644  INFO      INSERTED  venue_id=defcb19f-8b88-4855-8659-2a0d0ad06afd  place_id=ChIJ0e9cN9o0K4gRcUnXpTUXTP4  name=Bang Sue Bar
+2026-06-01 15:00:39,363  INFO      Processing 241/381  place_id=ChIJzVhaakE1K4gRhbiUUf46vKY
+2026-06-01 15:00:39,679  INFO      INSERTED  venue_id=47516e3b-a968-46e3-afa3-9dc7925928d8  place_id=ChIJzVhaakE1K4gRhbiUUf46vKY  name=John Candy Box Theatre
+2026-06-01 15:00:41,549  INFO      Processing 242/381  place_id=ChIJ61uFfFo1K4gRpDsHJJgyojk
+2026-06-01 15:00:41,857  INFO      INSERTED  venue_id=07095d64-b95f-4465-a3d4-fecf57ffb68a  place_id=ChIJ61uFfFo1K4gRpDsHJJgyojk  name=Barcode Saturdays
+2026-06-01 15:00:42,171  INFO      Processing 243/381  place_id=ChIJ6eusD941K4gRWhhwacLDgko
+2026-06-01 15:00:42,500  INFO      INSERTED  venue_id=cbbd3b4c-8846-4416-8f81-36f4c69c8f0c  place_id=ChIJ6eusD941K4gRWhhwacLDgko  name=Black Pearl
+2026-06-01 15:00:44,119  INFO      Processing 244/381  place_id=ChIJ8zJi6Pw1K4gR61uiW7ne2OM
+2026-06-01 15:00:44,379  INFO      INSERTED  venue_id=144a9862-1e5e-40cc-96c4-0f3094c5fdfe  place_id=ChIJ8zJi6Pw1K4gR61uiW7ne2OM  name=Aera
+2026-06-01 15:00:46,793  INFO      Processing 245/381  place_id=ChIJczLXSSY1K4gRO8rpxcxtmMI
+2026-06-01 15:00:47,334  INFO      INSERTED  venue_id=241a4594-1971-40d9-933e-180466067929  place_id=ChIJczLXSSY1K4gRO8rpxcxtmMI  name=Living Room
+2026-06-01 15:00:49,091  INFO      Processing 246/381  place_id=ChIJN1MVTNA0K4gRY25QL0ggKck
+2026-06-01 15:00:49,527  INFO      INSERTED  venue_id=8f46e40f-fd4c-435b-9e4c-b81b0e4cf2ab  place_id=ChIJN1MVTNA0K4gRY25QL0ggKck  name=Adelaide Hall
+2026-06-01 15:00:50,999  INFO      Processing 247/381  place_id=ChIJ2RpLnLw0K4gRe0xjgPn8PBg
+2026-06-01 15:00:51,319  INFO      INSERTED  venue_id=43f0aae6-5173-4325-a241-71271388ab25  place_id=ChIJ2RpLnLw0K4gRe0xjgPn8PBg  name=Koerner Hall
+2026-06-01 15:00:52,791  INFO      Processing 248/381  place_id=ChIJdccXyZM0K4gRu9mnZpTFdtY
+2026-06-01 15:00:53,807  INFO      INSERTED  venue_id=6148d3d8-b22c-4457-bb63-6bd44771cf8c  place_id=ChIJdccXyZM0K4gRu9mnZpTFdtY  name=Insomnia Restaurant and Lounge
+2026-06-01 15:00:55,418  INFO      Processing 249/381  place_id=ChIJPdKlauU0K4gRJS6nWcxBBB0
+2026-06-01 15:00:55,815  INFO      INSERTED  venue_id=8ae3f255-0b7f-40ba-8159-11f4ad33d128  place_id=ChIJPdKlauU0K4gRJS6nWcxBBB0  name=Northern Belle
+2026-06-01 15:00:57,744  INFO      Processing 250/381  place_id=ChIJs_Gr4rE0K4gR4PCci36eEkg
+2026-06-01 15:00:58,039  INFO      INSERTED  venue_id=f4b82904-f076-4ee4-b89f-f201538a79f8  place_id=ChIJs_Gr4rE0K4gR4PCci36eEkg  name=7 West Cafe
+2026-06-01 15:00:59,622  INFO      Processing 251/381  place_id=ChIJ_aJF8OM1K4gRGT3p-KKE-7E
+2026-06-01 15:01:00,523  INFO      INSERTED  venue_id=6a5d9ef9-2cd3-440b-9844-7bf04d5ffdaf  place_id=ChIJ_aJF8OM1K4gRGT3p-KKE-7E  name=Trapped Escape Rooms & Lounge Toronto
+2026-06-01 15:01:02,624  INFO      Processing 252/381  place_id=ChIJtUYjrDM1K4gRu074mJiK5zs
+2026-06-01 15:01:03,225  INFO      INSERTED  venue_id=d5de6961-229d-44fa-9d3f-c3529045c3ea  place_id=ChIJtUYjrDM1K4gRu074mJiK5zs  name=Ace of Spades Lounge and Events
+2026-06-01 15:01:04,798  INFO      Processing 253/381  place_id=ChIJ70k1g7Q0K4gRdZbTK10OV5A
+2026-06-01 15:01:05,143  INFO      INSERTED  venue_id=6850e113-3d74-489b-9ec6-6c2421c9123c  place_id=ChIJ70k1g7Q0K4gRdZbTK10OV5A  name=Buddies in Bad Times Theatre
+2026-06-01 15:01:07,379  INFO      Processing 254/381  place_id=ChIJ7YU1Wio1K4gRlGIfimOupBY
+2026-06-01 15:01:07,931  INFO      INSERTED  venue_id=15cb1008-dd96-4a4b-a27a-26a22b224afd  place_id=ChIJ7YU1Wio1K4gRlGIfimOupBY  name=Alobar Downtown
+2026-06-01 15:01:09,525  INFO      Processing 255/381  place_id=ChIJ55X2Ews1K4gRZB1JcQIQ0M4
+2026-06-01 15:01:09,864  INFO      INSERTED  venue_id=a9609f93-43c3-4e16-a6fd-f4b1f505beca  place_id=ChIJ55X2Ews1K4gRZB1JcQIQ0M4  name=Frenchy Bar et Brasserie
+2026-06-01 15:01:11,961  INFO      Processing 256/381  place_id=ChIJExALTdQ0K4gRbpnB-LrBIYc
+2026-06-01 15:01:12,218  INFO      INSERTED  venue_id=ab2e935c-770a-4ae1-910d-d6494326e808  place_id=ChIJExALTdQ0K4gRbpnB-LrBIYc  name=SOCO Kitchen + Bar
+2026-06-01 15:01:13,541  INFO      Processing 257/381  place_id=ChIJbxWsn_40K4gRJab3_Arl4c4
+2026-06-01 15:01:14,157  INFO      INSERTED  venue_id=1f1edbf6-7e4d-447e-a3c6-959c15fca216  place_id=ChIJbxWsn_40K4gRJab3_Arl4c4  name=Small Talk
+2026-06-01 15:01:16,443  INFO      Processing 258/381  place_id=ChIJLQ6-gxo1K4gR-LmP9-nwnP0
+2026-06-01 15:01:17,020  INFO      INSERTED  venue_id=6860600b-f023-4b38-ab13-a9276fcfe1ce  place_id=ChIJLQ6-gxo1K4gR-LmP9-nwnP0  name=Valerie Toronto
+2026-06-01 15:01:18,728  INFO      Processing 259/381  place_id=ChIJb14NhDo1K4gRtH9setI4_r4
+2026-06-01 15:01:19,395  INFO      INSERTED  venue_id=665a3650-aba3-47a0-8cb7-248433e4a372  place_id=ChIJb14NhDo1K4gRtH9setI4_r4  name=TD Infinite Lounge
+2026-06-01 15:01:20,888  INFO      Processing 260/381  place_id=ChIJD6hUolg1K4gRsgUJSNwcOEo
+2026-06-01 15:01:21,165  INFO      INSERTED  venue_id=c60610bc-26ca-48b9-a08e-6d1d57e6d474  place_id=ChIJD6hUolg1K4gRsgUJSNwcOEo  name=Earls Kitchen + Bar
+2026-06-01 15:01:22,978  INFO      Processing 261/381  place_id=ChIJ4aq4W_w0K4gRfSJ2iuOLqLE
+2026-06-01 15:01:23,228  INFO      INSERTED  venue_id=2fa834ae-206b-49fa-ad6d-9cf02614dba0  place_id=ChIJ4aq4W_w0K4gRfSJ2iuOLqLE  name=Small World Centre
+2026-06-01 15:01:25,540  INFO      Processing 262/381  place_id=ChIJp6yGSxc1K4gRjEPJXU-EXoY
+2026-06-01 15:01:26,285  INFO      INSERTED  venue_id=b77dd207-ff7a-461e-a3b6-70c2ea7fd2e2  place_id=ChIJp6yGSxc1K4gRjEPJXU-EXoY  name=Bar Pompette
+2026-06-01 15:01:27,915  INFO      Processing 263/381  place_id=ChIJR7u8eCM1K4gRaZU2YdXfAxE
+2026-06-01 15:01:28,317  INFO      INSERTED  venue_id=04fd1182-e521-4929-88eb-ecd9d7647348  place_id=ChIJR7u8eCM1K4gRaZU2YdXfAxE  name=Dopamixx
+2026-06-01 15:01:30,072  INFO      Processing 264/381  place_id=ChIJKRk2fS3L1IkRDRz__bTp2bU
+2026-06-01 15:01:30,415  INFO      INSERTED  venue_id=379feff2-bdcc-496a-a98f-bf5f7493b412  place_id=ChIJKRk2fS3L1IkRDRz__bTp2bU  name=Teller's Bistro & Bar
+2026-06-01 15:01:32,590  INFO      Processing 265/381  place_id=ChIJN1DoWbQ0K4gRrZrWUcg-Fb0
+2026-06-01 15:01:33,195  INFO      INSERTED  venue_id=04e592fd-ba25-48df-a949-50e8d4e607f2  place_id=ChIJN1DoWbQ0K4gRrZrWUcg-Fb0  name=Hoops Sports Bar & Grill
+2026-06-01 15:01:34,739  INFO      Processing 266/381  place_id=ChIJA7mrHRo1K4gRBEcKUdjRCYk
+2026-06-01 15:01:35,139  INFO      INSERTED  venue_id=50f64677-6143-4625-b4eb-2d027cfc0b08  place_id=ChIJA7mrHRo1K4gRBEcKUdjRCYk  name=Le Tigre
+2026-06-01 15:01:37,320  INFO      Processing 267/381  place_id=ChIJ96L5Q2zL1IkRro2qJ_Dk6z4
+2026-06-01 15:01:37,660  INFO      INSERTED  venue_id=d8848f20-3bd6-4bd7-a3b4-f398a1ce38c6  place_id=ChIJ96L5Q2zL1IkRro2qJ_Dk6z4  name=The Broadview Hotel
+2026-06-01 15:01:39,981  INFO      Processing 268/381  place_id=ChIJe4lTu8E1K4gRM-1NN0qvg4w
+2026-06-01 15:01:40,373  INFO      INSERTED  venue_id=5648d0fd-d704-4eeb-a043-1b268491e7b8  place_id=ChIJe4lTu8E1K4gRM-1NN0qvg4w  name=The One Caviar Bar
+2026-06-01 15:01:41,843  INFO      Processing 269/381  place_id=ChIJR56KCqc1K4gRyo69lue8zkc
+2026-06-01 15:01:42,379  INFO      INSERTED  venue_id=e7fba6c0-d39c-42cd-b525-f509d709de94  place_id=ChIJR56KCqc1K4gRyo69lue8zkc  name=Twilight Cafe & Bar (Yonge & Bloor)
+2026-06-01 15:01:44,471  INFO      Processing 270/381  place_id=ChIJqSq9PirL1IkR7RofU3vuG_I
+2026-06-01 15:01:44,734  INFO      INSERTED  venue_id=f5835b5a-d6d5-45e3-a0f1-1fecb821e658  place_id=ChIJqSq9PirL1IkR7RofU3vuG_I  name=Chartroom Bar and Lounge
+2026-06-01 15:01:46,334  INFO      Processing 271/381  place_id=ChIJWdGE1Oc0K4gRxg9N1DI5kf4
+2026-06-01 15:01:46,667  INFO      INSERTED  venue_id=d2ff2644-a127-470e-acf2-2623a167d776  place_id=ChIJWdGE1Oc0K4gRxg9N1DI5kf4  name=Bathurst Local
+2026-06-01 15:01:49,434  INFO      Processing 272/381  place_id=ChIJTfWVcjLL1IkRg1TwruGmj7Y
+2026-06-01 15:01:49,818  INFO      INSERTED  venue_id=3bbf04ab-0e79-4f33-a753-b84a3c26c889  place_id=ChIJTfWVcjLL1IkRg1TwruGmj7Y  name=Consort Bar
+2026-06-01 15:01:51,812  INFO      Processing 273/381  place_id=ChIJpaYLPcM1K4gR7JHGnBTz_EY
+2026-06-01 15:01:52,457  INFO      INSERTED  venue_id=1435ac9a-c02a-490b-bc0f-f83c1c325bbe  place_id=ChIJpaYLPcM1K4gR7JHGnBTz_EY  name=Flora Lounge
+2026-06-01 15:01:54,214  INFO      Processing 274/381  place_id=ChIJwwPb0SjN1IkRx4AsGrQ0dUM
+2026-06-01 15:01:54,544  INFO      INSERTED  venue_id=9697119d-ba9a-4041-9d26-d375d8dcb54b  place_id=ChIJwwPb0SjN1IkRx4AsGrQ0dUM  name=Comedy Bar Danforth
+2026-06-01 15:01:57,158  INFO      Processing 275/381  place_id=ChIJ8WL7eFPL1IkRKOSnTwcNwWw
+2026-06-01 15:01:57,548  INFO      INSERTED  venue_id=7855dcb0-90b5-4f4f-86ec-60cb693cd56c  place_id=ChIJ8WL7eFPL1IkRKOSnTwcNwWw  name=Día Restaurant and Lounge
+2026-06-01 15:01:59,360  INFO      Processing 276/381  place_id=ChIJnS9xEpvL1IkR5PcUll0LTZk
+2026-06-01 15:01:59,782  INFO      INSERTED  venue_id=28ec90a2-56ad-4850-85f9-01ad8c78468f  place_id=ChIJnS9xEpvL1IkR5PcUll0LTZk  name=HISTORY
+2026-06-01 15:02:01,580  INFO      Processing 277/381  place_id=ChIJn8NNx0A1K4gRiVQ5K2mALeo
+2026-06-01 15:02:01,878  INFO      INSERTED  venue_id=bf1ac3ca-8ba2-4f71-8da9-1fbeffb910b0  place_id=ChIJn8NNx0A1K4gRiVQ5K2mALeo  name=FlyMood Lounge & kitchen
+2026-06-01 15:02:03,352  INFO      Processing 278/381  place_id=ChIJbw3bW2s1K4gRiMF-ZKc3QUE
+2026-06-01 15:02:03,627  INFO      INSERTED  venue_id=74a0a3b7-a669-4f27-91f1-a9d48b7f51a0  place_id=ChIJbw3bW2s1K4gRiMF-ZKc3QUE  name=Sultan Lounge
+2026-06-01 15:02:04,919  INFO      Processing 279/381  place_id=ChIJUUfFj_E1K4gRfEVmKQPY-74
+2026-06-01 15:02:05,202  INFO      INSERTED  venue_id=a6534812-d67b-4408-831a-9c4605fe209e  place_id=ChIJUUfFj_E1K4gRfEVmKQPY-74  name=Thamel Kitchen + Bar - Cocktails, Beats & Karaoke
+2026-06-01 15:02:07,723  INFO      Processing 280/381  place_id=ChIJiWfmLwA1K4gRPeX5z-Sx03k
+2026-06-01 15:02:08,066  INFO      INSERTED  venue_id=6c418caf-d724-4485-af5b-9067295edb93  place_id=ChIJiWfmLwA1K4gRPeX5z-Sx03k  name=Story Toronto
+2026-06-01 15:02:09,636  INFO      Processing 281/381  place_id=ChIJO9xn-Nk0K4gRaP1rZ7rseYU
+2026-06-01 15:02:10,265  INFO      INSERTED  venue_id=7ed0ca95-82f2-4ef0-ad88-545ca9b3f664  place_id=ChIJO9xn-Nk0K4gRaP1rZ7rseYU  name=Mister C.
+2026-06-01 15:02:11,689  INFO      Processing 282/381  place_id=ChIJV55Envc0K4gR2Rk9tPTwSVo
+2026-06-01 15:02:11,963  INFO      INSERTED  venue_id=8dbbc633-7d3d-4b9b-beb3-f4a96e345153  place_id=ChIJV55Envc0K4gR2Rk9tPTwSVo  name=Pluronto
+2026-06-01 15:02:13,606  INFO      Processing 283/381  place_id=ChIJpw-30e80K4gRkDl5WBZ6wgw
+2026-06-01 15:02:14,134  INFO      INSERTED  venue_id=8b0f5450-74ca-406c-8173-6ba1c920c57d  place_id=ChIJpw-30e80K4gRkDl5WBZ6wgw  name=Monarch Tavern
+2026-06-01 15:02:15,508  INFO      Processing 284/381  place_id=ChIJ03FrewA1K4gR0SmX-ZgdYaA
+2026-06-01 15:02:16,105  INFO      INSERTED  venue_id=947df6d0-e9da-4190-a394-b634926a849a  place_id=ChIJ03FrewA1K4gR0SmX-ZgdYaA  name=Riley's Toronto
+2026-06-01 15:02:18,253  INFO      Processing 285/381  place_id=ChIJA-so3b41K4gRChwJv5GxoSk
+2026-06-01 15:02:18,659  INFO      INSERTED  venue_id=75d8d446-db62-4f84-9aab-6f8e79609f8c  place_id=ChIJA-so3b41K4gRChwJv5GxoSk  name=Midnight Market
+2026-06-01 15:02:20,043  INFO      Processing 286/381  place_id=ChIJqevxTjDL1IkRUd9Rrx1JD2I
+2026-06-01 15:02:20,339  INFO      INSERTED  venue_id=9f792ada-ce29-41bd-b706-fd553ff14b5f  place_id=ChIJqevxTjDL1IkRUd9Rrx1JD2I  name=The Corner Place
+2026-06-01 15:02:22,234  INFO      Processing 287/381  place_id=ChIJyx5mkDY0K4gRkobfO8_MX_k
+2026-06-01 15:02:22,515  INFO      INSERTED  venue_id=f20bb882-4198-4804-b640-f011627f70d5  place_id=ChIJyx5mkDY0K4gRkobfO8_MX_k  name=Coffee & All That Jazz
+2026-06-01 15:02:23,825  INFO      Processing 288/381  place_id=ChIJpy9AfAA1K4gRf5PHN4_qAAE
+2026-06-01 15:02:24,367  INFO      INSERTED  venue_id=eb971765-6681-4ad2-a31b-e4c298a8e589  place_id=ChIJpy9AfAA1K4gRf5PHN4_qAAE  name=Thai Tavern
+2026-06-01 15:02:26,411  INFO      Processing 289/381  place_id=ChIJHyYW3vg0K4gRHdtmcA7tK-I
+2026-06-01 15:02:26,685  INFO      INSERTED  venue_id=d1382d0c-8c37-48fb-b3fc-23973859a689  place_id=ChIJHyYW3vg0K4gRHdtmcA7tK-I  name=The Garrison
+2026-06-01 15:02:28,289  INFO      Processing 290/381  place_id=ChIJX5z82xnL1IkRBKcGwC1FQ28
+2026-06-01 15:02:28,555  INFO      INSERTED  venue_id=12386cbd-ad59-41d4-a237-84b1c2495dbe  place_id=ChIJX5z82xnL1IkRBKcGwC1FQ28  name=Astor Lounge
+2026-06-01 15:02:30,089  INFO      Processing 291/381  place_id=ChIJFy2acS7L1IkRpOsjQVss1yw
+2026-06-01 15:02:30,366  INFO      INSERTED  venue_id=a29beb85-3c8c-419c-8d63-91df2cb4f746  place_id=ChIJFy2acS7L1IkRpOsjQVss1yw  name=Scotland Yard Pub
+2026-06-01 15:02:31,982  INFO      Processing 292/381  place_id=ChIJ7Y7iT4LL1IkR8s5zNH3wMtQ
+2026-06-01 15:02:32,240  INFO      INSERTED  venue_id=d0b3415e-96c4-457c-b3b5-46f9b938bcc7  place_id=ChIJ7Y7iT4LL1IkR8s5zNH3wMtQ  name=Nomad Toronto
+2026-06-01 15:02:33,766  INFO      Processing 293/381  place_id=ChIJd-AY1tM0K4gRiZsUMLat5TM
+2026-06-01 15:02:34,017  INFO      INSERTED  venue_id=4932fd73-9455-402b-a40f-fe1ef5d937db  place_id=ChIJd-AY1tM0K4gRiZsUMLat5TM  name=Roy Thomson Hall
+2026-06-01 15:02:35,343  INFO      Processing 294/381  place_id=ChIJZZNXyrnL1IkRl6d6dowYK7g
+2026-06-01 15:02:35,617  INFO      INSERTED  venue_id=492596ce-dc66-47d3-8df9-eb99ffc33ac9  place_id=ChIJZZNXyrnL1IkRl6d6dowYK7g  name=Wei Bar
+2026-06-01 15:02:36,939  INFO      Processing 295/381  place_id=ChIJ8dvP7gg1K4gRvi8zTYtkVdk
+2026-06-01 15:02:37,203  INFO      INSERTED  venue_id=f3d63717-52bd-49b6-b5e1-89159b0d63e0  place_id=ChIJ8dvP7gg1K4gRvi8zTYtkVdk  name=Forbidden City
+2026-06-01 15:02:38,496  INFO      Processing 296/381  place_id=ChIJsWiClCo1K4gRtkDKLx_1uy8
+2026-06-01 15:02:38,922  INFO      INSERTED  venue_id=9de15ed6-b7ba-49b2-aab3-6e6e1f61a872  place_id=ChIJsWiClCo1K4gRtkDKLx_1uy8  name=Harbourfront Centre Concert Stage
+2026-06-01 15:02:40,283  INFO      Processing 297/381  place_id=ChIJP8rVksXL1IkRxWb6sEPigJc
+2026-06-01 15:02:40,629  INFO      INSERTED  venue_id=fb390494-6e85-4003-b43a-4e61bc35f27c  place_id=ChIJP8rVksXL1IkRxWb6sEPigJc  name=Club Kingsong
+2026-06-01 15:02:42,150  INFO      Processing 298/381  place_id=ChIJP7DN9t40K4gRWHmPH_GzUTo
+2026-06-01 15:02:42,410  INFO      INSERTED  venue_id=c786cacb-aaf6-4e02-bb3b-b55cf1d5b66d  place_id=ChIJP7DN9t40K4gRWHmPH_GzUTo  name=Lost and Found
+2026-06-01 15:02:44,003  INFO      Processing 299/381  place_id=ChIJzVkW-Nk0K4gRd4dHDvA6ekU
+2026-06-01 15:02:44,817  INFO      INSERTED  venue_id=e8537cab-29cc-4ef1-988d-b37344e8c9e5  place_id=ChIJzVkW-Nk0K4gRd4dHDvA6ekU  name=KŌST
+2026-06-01 15:02:48,212  INFO      Processing 300/381  place_id=ChIJ6eSIjLk1K4gRpagIWbyE-fw
+2026-06-01 15:02:48,509  INFO      INSERTED  venue_id=29f22974-5f24-4a95-a8bf-8eda92ec2a1b  place_id=ChIJ6eSIjLk1K4gRpagIWbyE-fw  name=Hes Lounge
+2026-06-01 15:02:50,016  INFO      Processing 301/381  place_id=ChIJ_YhS2ITM1IkR2UVaPTRVnec
+2026-06-01 15:02:50,464  INFO      INSERTED  venue_id=2a2a890e-37b6-4b6f-a3ce-71834628b5ca  place_id=ChIJ_YhS2ITM1IkR2UVaPTRVnec  name=Toronto Jazz Collective
+2026-06-01 15:02:52,346  INFO      Processing 302/381  place_id=ChIJsaFjsC3L1IkRou1YH7q_r0A
+2026-06-01 15:02:52,676  INFO      INSERTED  venue_id=3613d0f6-8dab-4fce-b6b7-aca051339364  place_id=ChIJsaFjsC3L1IkRou1YH7q_r0A  name=Meridian Hall
+2026-06-01 15:02:54,745  INFO      Processing 303/381  place_id=ChIJ9bu8NNc1K4gRiTHaablkdas
+2026-06-01 15:02:55,014  INFO      INSERTED  venue_id=02cb3fdd-1c0c-44d1-afdd-4daf0f51f6fb  place_id=ChIJ9bu8NNc1K4gRiTHaablkdas  name=Bar Dem
+2026-06-01 15:02:56,320  INFO      Processing 304/381  place_id=ChIJe666YNA0K4gRgPfziT7HLp0
+2026-06-01 15:02:56,592  INFO      INSERTED  venue_id=417a0d7e-3fe4-43d7-9f6d-ac6eae551d70  place_id=ChIJe666YNA0K4gRgPfziT7HLp0  name=Fox on John
+2026-06-01 15:02:58,384  INFO      Processing 305/381  place_id=ChIJu5M5INA1K4gR12c8Y_Pkpi8
+2026-06-01 15:02:58,651  INFO      INSERTED  venue_id=429f9612-c7f0-4e95-9590-368f07860f87  place_id=ChIJu5M5INA1K4gR12c8Y_Pkpi8  name=iCue Billiard & Lounge
+2026-06-01 15:03:00,519  INFO      Processing 306/381  place_id=ChIJIeUwBMnL1IkREcG6pcnZh2E
+2026-06-01 15:03:01,076  INFO      INSERTED  venue_id=5fc9a80a-5038-4518-a4d5-e4460ed6900e  place_id=ChIJIeUwBMnL1IkREcG6pcnZh2E  name=Dine & Dim
+2026-06-01 15:03:02,309  INFO      Processing 307/381  place_id=ChIJsVEpGZQ0K4gR4z08zU_LK9w
+2026-06-01 15:03:03,240  INFO      INSERTED  venue_id=515552bd-a019-47e5-a03d-e242e7aced27  place_id=ChIJsVEpGZQ0K4gR4z08zU_LK9w  name=Tranzac Club
+2026-06-01 15:03:04,658  INFO      Processing 308/381  place_id=ChIJ1elEw2rL1IkRGIfjx_v91FQ
+2026-06-01 15:03:04,961  INFO      INSERTED  venue_id=77a038cb-3d1e-4897-832b-992ef3d63a70  place_id=ChIJ1elEw2rL1IkRGIfjx_v91FQ  name=Lavelle
+2026-06-01 15:03:06,314  INFO      Processing 309/381  place_id=ChIJEZNNVq40K4gRRHaO0sxjU_Q
+2026-06-01 15:03:06,586  INFO      INSERTED  venue_id=c83d625e-8263-41f0-86d5-f02f6bb1b0df  place_id=ChIJEZNNVq40K4gRRHaO0sxjU_Q  name=The Pilot
+2026-06-01 15:03:08,085  INFO      Processing 310/381  place_id=ChIJCb81WSvL1IkREJRm1efQQlg
+2026-06-01 15:03:08,399  INFO      INSERTED  venue_id=d2d4e09d-4d4a-4a56-869c-9cea266ab5c0  place_id=ChIJCb81WSvL1IkREJRm1efQQlg  name=Scotiabank Arena
+2026-06-01 15:03:09,670  INFO      Processing 311/381  place_id=ChIJDQlJO9TL1IkRdmZJkqqD3Io
+2026-06-01 15:03:10,557  INFO      INSERTED  venue_id=3fa58eb7-8dd7-4a89-a775-cf47fc472f77  place_id=ChIJDQlJO9TL1IkRdmZJkqqD3Io  name=Will Daniels (Sucks)
+2026-06-01 15:03:10,560  INFO      Processing 312/381  place_id=ChIJJQsuwr41K4gRXwW0wXHrE9U
+2026-06-01 15:03:10,915  INFO      INSERTED  venue_id=e640efea-7314-4a65-b81a-946dc29e9024  place_id=ChIJJQsuwr41K4gRXwW0wXHrE9U  name=RendezViews
+2026-06-01 15:03:12,534  INFO      Processing 313/381  place_id=ChIJa7dwhhA1K4gRUV9cPcYC64g
+2026-06-01 15:03:12,795  INFO      INSERTED  venue_id=41c1bcbc-e0be-4713-9ae2-0bd7150a5cb9  place_id=ChIJa7dwhhA1K4gRUV9cPcYC64g  name=RBC Amphitheatre
+2026-06-01 15:03:14,960  INFO      Processing 314/381  place_id=ChIJX9wAB4c1K4gRUAJJo3lDk6c
+2026-06-01 15:03:15,279  INFO      INSERTED  venue_id=a03d1fd3-0f74-4623-ad7a-b784ed238225  place_id=ChIJX9wAB4c1K4gRUAJJo3lDk6c  name=FreePlay Toronto Retro Arcade Bar
+2026-06-01 15:03:16,817  INFO      Processing 315/381  place_id=ChIJAeETu6Q1K4gRCNiUMnRCgl0
+2026-06-01 15:03:17,090  INFO      INSERTED  venue_id=c2b9a996-aba9-44a4-9151-21f64eb631f0  place_id=ChIJAeETu6Q1K4gRCNiUMnRCgl0  name=Mother
+2026-06-01 15:03:18,905  INFO      Processing 316/381  place_id=ChIJIaNRTMo0K4gRzzeTdei1wrc
+2026-06-01 15:03:19,164  INFO      INSERTED  venue_id=b1294b5f-d4ec-4737-9114-2bde76670c95  place_id=ChIJIaNRTMo0K4gRzzeTdei1wrc  name=Rex's Bar and Kitchen
+2026-06-01 15:03:21,027  INFO      Processing 317/381  place_id=ChIJuZBFvQg1K4gRyTiGfj8U2b0
+2026-06-01 15:03:21,289  INFO      INSERTED  venue_id=451a4303-e6f3-4744-a7c0-08f1cd9c541c  place_id=ChIJuZBFvQg1K4gRyTiGfj8U2b0  name=Bodega Weed Dispensary
+2026-06-01 15:03:22,592  INFO      Processing 318/381  place_id=ChIJl7OWzXU1K4gR2wYw78hegXI
+2026-06-01 15:03:22,873  INFO      INSERTED  venue_id=371ad423-9f6e-4818-baad-53a4798687a7  place_id=ChIJl7OWzXU1K4gR2wYw78hegXI  name=Bar Mordecai
+2026-06-01 15:03:25,719  INFO      Processing 319/381  place_id=ChIJq8nEITLL1IkRuCo9I6clmJ4
+2026-06-01 15:03:25,997  INFO      INSERTED  venue_id=f896884b-1994-4953-80a4-5503498e7149  place_id=ChIJq8nEITLL1IkRuCo9I6clmJ4  name=Albany Club
+2026-06-01 15:03:28,369  INFO      Processing 320/381  place_id=ChIJfdH0OmzL1IkRS4ijSna4C84
+2026-06-01 15:03:28,649  INFO      INSERTED  venue_id=cbdc4131-2302-40ed-96a1-dfc7412b038c  place_id=ChIJfdH0OmzL1IkRS4ijSna4C84  name=Black Sheep Comedy
+2026-06-01 15:03:28,649  INFO      Processing 321/381  place_id=ChIJHwuo3es0K4gREZveRQ9pNA8
+2026-06-01 15:03:28,912  INFO      INSERTED  venue_id=0389aa4c-84bb-4e56-b548-0eb11b0b86af  place_id=ChIJHwuo3es0K4gREZveRQ9pNA8  name=Empire Comedy Live
+2026-06-01 15:03:28,920  INFO      Processing 322/381  place_id=ChIJyxnZ2B7L1IkRtNxEmWo9_P8
+2026-06-01 15:03:29,434  INFO      INSERTED  venue_id=bacf5ab4-8519-4296-ac1d-160b08d7df90  place_id=ChIJyxnZ2B7L1IkRtNxEmWo9_P8  name=Cabana
+2026-06-01 15:03:31,496  INFO      Processing 323/381  place_id=ChIJPdujdpUzK4gRfXT9TA8nPNk
+2026-06-01 15:03:31,797  INFO      INSERTED  venue_id=4a0a98b2-08ae-4af9-9e65-42bb4e9129b7  place_id=ChIJPdujdpUzK4gRfXT9TA8nPNk  name=Ki Karaoke by Kushi
+2026-06-01 15:03:33,343  INFO      Processing 324/381  place_id=ChIJUxg5Mc40K4gRqeelKegdE3c
+2026-06-01 15:03:33,623  INFO      INSERTED  venue_id=1961eaaf-6439-482b-b15b-f3faf2b6f879  place_id=ChIJUxg5Mc40K4gRqeelKegdE3c  name=The Rex Hotel Jazz and Blues Bar
+2026-06-01 15:03:34,920  INFO      Processing 325/381  place_id=ChIJSRmVLjXL1IkRQHFvgpujO7Y
+2026-06-01 15:03:35,216  INFO      INSERTED  venue_id=ce5ae899-2a83-4fbb-8e40-d94710a5955f  place_id=ChIJSRmVLjXL1IkRQHFvgpujO7Y  name=The Fifth Social Club
+2026-06-01 15:03:36,798  INFO      Processing 326/381  place_id=ChIJ3_z1azLL1IkRkavxzF3fKJk
+2026-06-01 15:03:37,095  INFO      INSERTED  venue_id=372d761e-3bcc-492c-b330-e68d947bd49f  place_id=ChIJ3_z1azLL1IkRkavxzF3fKJk  name=Hawa Beirut Restaurant & Lounge
+2026-06-01 15:03:38,874  INFO      Processing 327/381  place_id=ChIJU8O04Tw1K4gRE0kAUCy975s
+2026-06-01 15:03:39,283  INFO      INSERTED  venue_id=e06d68dc-5ad8-4f16-92d3-c2774717d1ba  place_id=ChIJU8O04Tw1K4gRE0kAUCy975s  name=hush hush
+2026-06-01 15:03:40,961  INFO      Processing 328/381  place_id=ChIJw23l82g1K4gR35Rh92oZ_x0
+2026-06-01 15:03:41,236  INFO      INSERTED  venue_id=ec98b6b8-aad1-45f7-a5f0-624e84ba57a7  place_id=ChIJw23l82g1K4gR35Rh92oZ_x0  name=The lobby bar at Ace Hotel Toronto
+2026-06-01 15:03:42,526  INFO      Processing 329/381  place_id=ChIJU1gu4us0K4gRv9DuMfAv1x4
+2026-06-01 15:03:43,053  INFO      INSERTED  venue_id=ccd913cb-331e-4355-bf98-a0e650dffce9  place_id=ChIJU1gu4us0K4gRv9DuMfAv1x4  name=Sneaky Dee's
+2026-06-01 15:03:44,325  INFO      Processing 330/381  place_id=ChIJ7RL6Kc40K4gRERL09VSobgo
+2026-06-01 15:03:44,654  INFO      INSERTED  venue_id=404f061d-adfd-485f-ba47-3cffbf7b6fae  place_id=ChIJ7RL6Kc40K4gRERL09VSobgo  name=Yuk Yuk's Comedy Club Toronto
+2026-06-01 15:03:45,902  INFO      Processing 331/381  place_id=ChIJyYDE54o1K4gRLSNape49O1k
+2026-06-01 15:03:46,723  INFO      INSERTED  venue_id=d2475c35-14f1-4188-9219-2cf992c409c4  place_id=ChIJyYDE54o1K4gRLSNape49O1k  name=Top Toronto Clubs
+2026-06-01 15:03:46,728  INFO      Processing 332/381  place_id=ChIJJdRoGl81K4gR8G4iESVS4I0
+2026-06-01 15:03:47,269  INFO      INSERTED  venue_id=9b127be9-c7e5-4314-b3c3-01aa3b15f618  place_id=ChIJJdRoGl81K4gR8G4iESVS4I0  name=Wiggle Room Toronto
+2026-06-01 15:03:48,989  INFO      Processing 333/381  place_id=ChIJPfAjR601K4gRaUjMpCS2-zc
+2026-06-01 15:03:49,295  INFO      INSERTED  venue_id=0c7bb1a4-74aa-466d-a499-94bec9080ba2  place_id=ChIJPfAjR601K4gRaUjMpCS2-zc  name=Good Enough Live Karaoke
+2026-06-01 15:03:50,551  INFO      Processing 334/381  place_id=ChIJxc_7MpI0K4gR_CxjHVsdwGA
+2026-06-01 15:03:50,917  INFO      INSERTED  venue_id=9e953c2b-1314-4047-9b6e-c02e8ccaa9d4  place_id=ChIJxc_7MpI0K4gR_CxjHVsdwGA  name=Coda
+2026-06-01 15:03:52,439  INFO      Processing 335/381  place_id=ChIJdQuJ2WwtK4gR3acgwbAAztI
+2026-06-01 15:03:52,710  INFO      INSERTED  venue_id=94a7f8b4-dc04-402f-adc6-7aa78f511192  place_id=ChIJdQuJ2WwtK4gR3acgwbAAztI  name=HOTHOUSE
+2026-06-01 15:03:54,723  INFO      Processing 336/381  place_id=ChIJEQl0p801K4gRUnSLOlKcLWk
+2026-06-01 15:03:55,073  INFO      INSERTED  venue_id=2c794170-4b76-471f-babb-aefd10b10941  place_id=ChIJEQl0p801K4gRUnSLOlKcLWk  name=MYST SHISHA LOUNGE
+2026-06-01 15:03:57,107  INFO      Processing 337/381  place_id=ChIJWZiKLmQ1K4gRTohnty7oKUs
+2026-06-01 15:03:57,376  INFO      INSERTED  venue_id=a602acb0-a287-4729-89a4-ab360321b341  place_id=ChIJWZiKLmQ1K4gRTohnty7oKUs  name=Clockwork Champagne & Cocktails
+2026-06-01 15:03:58,929  INFO      Processing 338/381  place_id=ChIJjU_GLwA1K4gRRUaSVWzkw4Y
+2026-06-01 15:03:59,771  INFO      INSERTED  venue_id=3201f0a4-ad45-48a5-8c56-6398ec31e442  place_id=ChIJjU_GLwA1K4gRRUaSVWzkw4Y  name=Charlemagne Cocktail Bar
+2026-06-01 15:04:01,029  INFO      Processing 339/381  place_id=ChIJb3aGct01K4gRn30wR4B2XYM
+2026-06-01 15:04:01,362  INFO      INSERTED  venue_id=ab3ead0e-bae6-4f75-8732-8e41b56fcf18  place_id=ChIJb3aGct01K4gRn30wR4B2XYM  name=A-Zone Gaming | PC, Racing & Console Lounge
+2026-06-01 15:04:02,894  INFO      Processing 340/381  place_id=ChIJ2d-gcGI1K4gRUUPI93CZxu8
+2026-06-01 15:04:03,428  INFO      INSERTED  venue_id=9f13c3f6-11c0-4dd6-8b93-8e9fd3e246ac  place_id=ChIJ2d-gcGI1K4gRUUPI93CZxu8  name=Mademoiselle Raw Bar + Grill
+2026-06-01 15:04:04,685  INFO      Processing 341/381  place_id=ChIJvWJqqeRSV0AR7gKYPz20RTk
+2026-06-01 15:04:05,008  INFO      INSERTED  venue_id=6b2e1c2a-b548-4d78-ae93-3c3d29770aff  place_id=ChIJvWJqqeRSV0AR7gKYPz20RTk  name=Bad Dog Comedy Studio
+2026-06-01 15:04:07,521  INFO      Processing 342/381  place_id=ChIJMQFGybY1K4gR2O_N2BB9e0U
+2026-06-01 15:04:07,796  INFO      INSERTED  venue_id=68a61e99-b4e3-45e4-8ea1-eaaba7292e88  place_id=ChIJMQFGybY1K4gR2O_N2BB9e0U  name=Ace Hotel Toronto
+2026-06-01 15:04:09,189  INFO      Processing 343/381  place_id=ChIJad_elAg1K4gRjZt27GmtqSQ
+2026-06-01 15:04:09,613  INFO      INSERTED  venue_id=2998a070-bcd0-4839-b137-9ca9a271c284  place_id=ChIJad_elAg1K4gRjZt27GmtqSQ  name=Queen Elizabeth Theatre
+2026-06-01 15:04:11,311  INFO      Processing 344/381  place_id=ChIJt5RTlA0tK4gRjBoufPoKgF8
+2026-06-01 15:04:11,806  INFO      INSERTED  venue_id=20731c53-d063-4430-a721-6910d89b1fab  place_id=ChIJt5RTlA0tK4gRjBoufPoKgF8  name=Yonge Karaoke
+2026-06-01 15:04:14,517  INFO      Processing 345/381  place_id=ChIJR_ddTiM1K4gRgTPhJYr2ZRE
+2026-06-01 15:04:15,030  INFO      INSERTED  venue_id=6c47bb06-da8d-4afa-af47-820e6ed66d0c  place_id=ChIJR_ddTiM1K4gRgTPhJYr2ZRE  name=CashOnly Bar
+2026-06-01 15:04:16,506  INFO      Processing 346/381  place_id=ChIJ7V1UsV80K4gRHUUSnPZR5mc
+2026-06-01 15:04:17,114  INFO      INSERTED  venue_id=265a1df5-d829-4256-92aa-0b3d5fd3db1c  place_id=ChIJ7V1UsV80K4gRHUUSnPZR5mc  name=Comedy Bar
+2026-06-01 15:04:18,323  INFO      Processing 347/381  place_id=ChIJiaVrHOzL1IkRiBgRDUVlqaw
+2026-06-01 15:04:18,642  INFO      INSERTED  venue_id=ec3392d3-594f-4f1e-b67b-445711204ac9  place_id=ChIJiaVrHOzL1IkRiBgRDUVlqaw  name=The Berczy Tavern
+2026-06-01 15:04:20,702  INFO      Processing 348/381  place_id=ChIJe1A28Ys1K4gRqgUyNDHkh2w
+2026-06-01 15:04:20,989  INFO      INSERTED  venue_id=f60357ba-8ca3-448f-9395-a252a4f2e0c8  place_id=ChIJe1A28Ys1K4gRqgUyNDHkh2w  name=LIBRARY BAR
+2026-06-01 15:04:22,807  INFO      Processing 349/381  place_id=ChIJwwsVRyMzK4gRZKxNyfstAY4
+2026-06-01 15:04:23,110  INFO      INSERTED  venue_id=ef299279-8102-4864-a65b-60a7b3cb6b90  place_id=ChIJwwsVRyMzK4gRZKxNyfstAY4  name=Absolute Comedy Toronto
+2026-06-01 15:04:24,379  INFO      Processing 350/381  place_id=ChIJ6bEPOvk1K4gRHjhvwW3VTS0
+2026-06-01 15:04:24,673  ERROR     ERROR processing place_id=ChIJ6bEPOvk1K4gRHjhvwW3VTS0 — rolled back.
+Traceback (most recent call last):
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/01_google_places.py", line 414, in run
+    action = process_place(conn, place)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/01_google_places.py", line 377, in process_place
+    venue_id = upsert_venue(conn, venue_dict)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/../db.py", line 105, in upsert_venue
+    cur.execute(sql, params)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/psycopg2/extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "venue_slug_key"
+DETAIL:  Key (slug)=(harriet-s-rooftop) already exists.
+
+2026-06-01 15:04:24,677  INFO      Processing 351/381  place_id=ChIJ7XMHydM0K4gRpKItDSOPH9w
+2026-06-01 15:04:25,239  INFO      INSERTED  venue_id=2e170aa2-0a95-4fc0-99fe-9019298b2f7a  place_id=ChIJ7XMHydM0K4gRpKItDSOPH9w  name=Moxies Toronto Downtown Restaurant
+2026-06-01 15:04:26,485  INFO      Processing 352/381  place_id=ChIJoRVmit00K4gR2NDjcJcLB2A
+2026-06-01 15:04:26,746  INFO      INSERTED  venue_id=f6aa3971-df6a-44ec-810b-ffb8aeb33ccc  place_id=ChIJoRVmit00K4gR2NDjcJcLB2A  name=Bovine Sex Club
+2026-06-01 15:04:28,063  INFO      Processing 353/381  place_id=ChIJBzHch_A1K4gRyXeB9cjt-L8
+2026-06-01 15:04:28,362  INFO      INSERTED  venue_id=bb0eb8cd-ee86-444b-9366-1accab6bef20  place_id=ChIJBzHch_A1K4gRyXeB9cjt-L8  name=Bar Caña (The Roof at SOCO)
+2026-06-01 15:04:29,867  INFO      Processing 354/381  place_id=ChIJjxqYqpM1K4gRa0dolvL2XnA
+2026-06-01 15:04:30,694  INFO      INSERTED  venue_id=167bd18d-1c1e-4546-ba10-6b165424e8df  place_id=ChIJjxqYqpM1K4gRa0dolvL2XnA  name=The Comedy Lab
+2026-06-01 15:04:32,534  INFO      Processing 355/381  place_id=ChIJzyMRdn4zK4gRntKwp79DY6A
+2026-06-01 15:04:32,852  INFO      INSERTED  venue_id=db484809-9952-4562-aaa0-2190103e694b  place_id=ChIJzyMRdn4zK4gRntKwp79DY6A  name=Cannabis Comedy Festival
+2026-06-01 15:04:34,342  INFO      Processing 356/381  place_id=ChIJxSh5lEI1K4gRqyva2iUvRs0
+2026-06-01 15:04:34,603  INFO      INSERTED  venue_id=5ae3d769-2652-44e4-b8c4-99f9ef71e28a  place_id=ChIJxSh5lEI1K4gRqyva2iUvRs0  name=Dejavu Restaurant and Lounge
+2026-06-01 15:04:36,574  INFO      Processing 357/381  place_id=ChIJN2FHgEA1K4gRJtaykEROq30
+2026-06-01 15:04:37,062  INFO      INSERTED  venue_id=ae9a06d0-ac8a-465b-b376-d9cac4a107fc  place_id=ChIJN2FHgEA1K4gRJtaykEROq30  name=The Comedy Green Room
+2026-06-01 15:04:38,451  INFO      Processing 358/381  place_id=ChIJ9WjjvonL1IkRxdHrh0Z6Pl0
+2026-06-01 15:04:38,973  INFO      INSERTED  venue_id=7c018262-d79c-4b2a-91cb-d29c3f043ad9  place_id=ChIJ9WjjvonL1IkRxdHrh0Z6Pl0  name=The Drink - Cocktail & Pizza Bar
+2026-06-01 15:04:42,302  INFO      Processing 359/381  place_id=ChIJW7mzHIc1K4gRLciLq6HxsCY
+2026-06-01 15:04:42,650  INFO      INSERTED  venue_id=46d6c498-d83e-4ab2-ad1f-0abd66700db7  place_id=ChIJW7mzHIc1K4gRLciLq6HxsCY  name=Annabel's Music Hall
+2026-06-01 15:04:43,972  INFO      Processing 360/381  place_id=ChIJCzl1d5U1K4gRSIUglimbYi8
+2026-06-01 15:04:44,295  INFO      INSERTED  venue_id=72c76a15-b07d-456d-934b-9de486bbb85c  place_id=ChIJCzl1d5U1K4gRSIUglimbYi8  name=Shisha & Karaoke Lounge
+2026-06-01 15:04:45,903  INFO      Processing 361/381  place_id=ChIJy0Gm88I0K4gRFgbnlHv38C0
+2026-06-01 15:04:46,199  INFO      INSERTED  venue_id=1e987dab-4a60-405c-a8f0-208b7b79c497  place_id=ChIJy0Gm88I0K4gRFgbnlHv38C0  name=Handlebar
+2026-06-01 15:04:47,979  INFO      Processing 362/381  place_id=ChIJ-7onLR01K4gRvTqT2wkjnCg
+2026-06-01 15:04:48,256  INFO      INSERTED  venue_id=9409a130-5ad2-4c7b-9dfd-515bc26d7f00  place_id=ChIJ-7onLR01K4gRvTqT2wkjnCg  name=11:59 Bar:Café
+2026-06-01 15:04:49,552  INFO      Processing 363/381  place_id=ChIJKSGg_K40K4gRZu1p14vL_Yg
+2026-06-01 15:04:49,821  INFO      INSERTED  venue_id=799a3f76-652c-4662-a92c-9933177c4a4c  place_id=ChIJKSGg_K40K4gRZu1p14vL_Yg  name=Blu Ristorante Toronto
+2026-06-01 15:04:51,358  INFO      Processing 364/381  place_id=ChIJ1xDYP800K4gRr6xqHfSdxBE
+2026-06-01 15:04:51,708  INFO      INSERTED  venue_id=47510190-41a0-48d3-9099-e8dfad9e4918  place_id=ChIJ1xDYP800K4gRr6xqHfSdxBE  name=John & Sons Oyster House
+2026-06-01 15:04:53,226  INFO      Processing 365/381  place_id=ChIJFYkn3us0K4gRXJS_mIuZEus
+2026-06-01 15:04:53,502  INFO      INSERTED  venue_id=86aa7318-36a3-4f23-8c88-91290c0426c5  place_id=ChIJFYkn3us0K4gRXJS_mIuZEus  name=NEST
+2026-06-01 15:04:55,522  INFO      Processing 366/381  place_id=ChIJySjGnBI1K4gR3lmQ6CdtL4c
+2026-06-01 15:04:55,892  INFO      INSERTED  venue_id=c3e741ab-f955-4382-b072-48bbd382eb5b  place_id=ChIJySjGnBI1K4gR3lmQ6CdtL4c  name=Big Trouble
+2026-06-01 15:04:57,651  INFO      Processing 367/381  place_id=ChIJQY_nP9I0K4gRj0Fo9reXGQ4
+2026-06-01 15:04:57,986  ERROR     ERROR processing place_id=ChIJQY_nP9I0K4gRj0Fo9reXGQ4 — rolled back.
+Traceback (most recent call last):
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/01_google_places.py", line 414, in run
+    action = process_place(conn, place)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/01_google_places.py", line 377, in process_place
+    venue_id = upsert_venue(conn, venue_dict)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/../db.py", line 105, in upsert_venue
+    cur.execute(sql, params)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/psycopg2/extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "venue_slug_key"
+DETAIL:  Key (slug)=(earls-kitchen-bar) already exists.
+
+2026-06-01 15:04:57,987  INFO      Processing 368/381  place_id=ChIJ___PBJM0K4gRIs8YOk-J2Ng
+2026-06-01 15:04:58,491  INFO      INSERTED  venue_id=c6e910a9-e0ad-48ec-b4cc-d3edd90906e9  place_id=ChIJ___PBJM0K4gRIs8YOk-J2Ng  name=Annex Improv
+2026-06-01 15:04:59,525  INFO      Processing 369/381  place_id=ChIJJdfF17I0K4gR5u6z88tRoVs
+2026-06-01 15:04:59,791  INFO      INSERTED  venue_id=1450a9a9-4c48-4896-aa71-b0b6dace6d62  place_id=ChIJJdfF17I0K4gR5u6z88tRoVs  name=Pegasus On Church
+2026-06-01 15:05:01,326  INFO      Processing 370/381  place_id=ChIJD1ru2-s0K4gRnkuNro6PxMc
+2026-06-01 15:05:01,660  INFO      INSERTED  venue_id=7fa58b78-898d-48f1-989e-53e4cd9c3add  place_id=ChIJD1ru2-s0K4gRnkuNro6PxMc  name=Toby's Pub & Eatery
+2026-06-01 15:05:02,900  INFO      Processing 371/381  place_id=ChIJMaCSZuw1K4gRXgmM0q_gUDw
+2026-06-01 15:05:03,230  INFO      INSERTED  venue_id=bd426daa-431b-4e18-8c0c-68eae6620650  place_id=ChIJMaCSZuw1K4gRXgmM0q_gUDw  name=Bar Maaya | Toronto
+2026-06-01 15:05:04,769  INFO      Processing 372/381  place_id=ChIJlxyQSQA1K4gRTgM2y4k15i4
+2026-06-01 15:05:05,281  INFO      INSERTED  venue_id=501bc66b-fb9a-438a-a918-ee2a9cbeed40  place_id=ChIJlxyQSQA1K4gRTgM2y4k15i4  name=Myst Toronto
+2026-06-01 15:05:06,337  INFO      Processing 373/381  place_id=ChIJ69w1NyjL1IkRsYsnoyhg9UM
+2026-06-01 15:05:06,602  INFO      INSERTED  venue_id=49e388d2-9e99-4fea-88c2-24cafe94a1f3  place_id=ChIJ69w1NyjL1IkRsYsnoyhg9UM  name=Oasis Aqualounge
+2026-06-01 15:05:08,659  INFO      Processing 374/381  place_id=ChIJ2SKLqSA1K4gRiUiLeUyjYyY
+2026-06-01 15:05:09,008  INFO      INSERTED  venue_id=4f2bf9f0-9a4a-47fb-879b-491f5d1eda32  place_id=ChIJ2SKLqSA1K4gRiUiLeUyjYyY  name=Boom Karaoke
+2026-06-01 15:05:10,232  INFO      Processing 375/381  place_id=ChIJfbK9F4k1K4gRylOd4lRUXc8
+2026-06-01 15:05:10,561  INFO      INSERTED  venue_id=8e58d4e6-355a-4e15-b554-ea6fd9fe896d  place_id=ChIJfbK9F4k1K4gRylOd4lRUXc8  name=Bar Poet
+2026-06-01 15:05:12,341  INFO      Processing 376/381  place_id=ChIJgZGqX8o0K4gR13cE_3RaqR8
+2026-06-01 15:05:12,670  INFO      INSERTED  venue_id=88189579-c67c-4b2f-b5c6-c568d6f9bd86  place_id=ChIJgZGqX8o0K4gR13cE_3RaqR8  name=The Queen & Beaver Public House
+2026-06-01 15:05:14,720  INFO      Processing 377/381  place_id=ChIJddMGbaU0K4gR9_K5VZ45XBE
+2026-06-01 15:05:14,996  INFO      INSERTED  venue_id=583f7a34-9fbc-419c-a469-06c56ff5ae1c  place_id=ChIJddMGbaU0K4gR9_K5VZ45XBE  name=Kasa Moto
+2026-06-01 15:05:16,841  INFO      Processing 378/381  place_id=ChIJ3Tug-MU0K4gRNaDf120i6WQ
+2026-06-01 15:05:17,107  INFO      INSERTED  venue_id=2fddf108-e66b-4dd4-ac71-f87a9c2569e6  place_id=ChIJ3Tug-MU0K4gRNaDf120i6WQ  name=Village Idiot Pub
+2026-06-01 15:05:18,910  INFO      Processing 379/381  place_id=ChIJqb-02840K4gRB2pqnQVZNss
+2026-06-01 15:05:19,197  INFO      INSERTED  venue_id=ff74b3bb-2986-4fc0-89b8-4621fef0a9dc  place_id=ChIJqb-02840K4gRB2pqnQVZNss  name=Duke of Cornwall
+2026-06-01 15:05:21,026  INFO      Processing 380/381  place_id=ChIJm5_QX940K4gRdtM5bxGf3g4
+2026-06-01 15:05:21,292  INFO      INSERTED  venue_id=aaef114c-3edf-42ab-94ea-c09a81091e5c  place_id=ChIJm5_QX940K4gRdtM5bxGf3g4  name=Gusto 101
+2026-06-01 15:05:22,800  INFO      Processing 381/381  place_id=ChIJCYFHCGUtK4gR5vVkUbKraqU
+2026-06-01 15:05:23,806  INFO      INSERTED  venue_id=e1b2c4b9-5e09-45aa-994e-991a228f8137  place_id=ChIJCYFHCGUtK4gR5vVkUbKraqU  name=Neway KTV
+2026-06-01 15:05:25,205  INFO      Assigning neighbourhoods to unassigned venues…
+2026-06-01 15:05:25,240  INFO      Neighbourhood assignment updated 376 rows.
+2026-06-01 15:05:25,245  INFO      Running vibe tag second pass…
+2026-06-01 15:05:25,255  INFO      Done. inserted=376  updated=0  skipped=5
+2026-06-01 15:05:25,256  INFO      ━━━ DONE   Google Places (venues)  elapsed=800.4s  counts={'inserted': 376, 'updated': 0, 'skipped': 5} ━━━
+2026-06-01 15:05:25,256  INFO      ━━━ START  Eventbrite (events) ━━━
+2026-06-01 15:05:25,288  INFO      ─── Fetching category 103 ───
+2026-06-01 15:05:25,288  INFO      Category 103  page 1  continuation=START
+2026-06-01 15:05:41,237  ERROR     HTTP error fetching category 103 page 1: 404 Client Error: NOT FOUND for url: https://www.eventbriteapi.com/v3/events/search/?location.address=Toronto%2C+ON&location.within=15km&categories=103&expand=venue%2Cticket_availability&page_size=50
+2026-06-01 15:05:41,238  INFO      ─── Fetching category 105 ───
+2026-06-01 15:05:41,238  INFO      Category 105  page 1  continuation=START
+2026-06-01 15:05:41,490  ERROR     HTTP error fetching category 105 page 1: 404 Client Error: NOT FOUND for url: https://www.eventbriteapi.com/v3/events/search/?location.address=Toronto%2C+ON&location.within=15km&categories=105&expand=venue%2Cticket_availability&page_size=50
+2026-06-01 15:05:41,491  INFO      ─── Fetching category 110 ───
+2026-06-01 15:05:41,491  INFO      Category 110  page 1  continuation=START
+2026-06-01 15:06:01,539  ERROR     Fatal error — transaction rolled back.
+Traceback (most recent call last):
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/util/retry.py", line 498, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='www.eventbriteapi.com', port=443): Read timed out. (read timeout=20)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/02_eventbrite.py", line 311, in run
+    data = fetch_events_page(category, continuation)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/02_eventbrite.py", line 214, in fetch_events_page
+    resp = requests.get(BASE_URL, headers=AUTH_HEADERS, params=params, timeout=20)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/requests/api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/requests/adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='www.eventbriteapi.com', port=443): Read timed out. (read timeout=20)
+2026-06-01 15:06:01,549  ERROR     ━━━ FAILED Eventbrite (events)  elapsed=36.3s ━━━
+Traceback (most recent call last):
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/util/retry.py", line 498, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='www.eventbriteapi.com', port=443): Read timed out. (read timeout=20)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/run_all.py", line 197, in run_step
+    counts = mod.run()
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/02_eventbrite.py", line 311, in run
+    data = fetch_events_page(category, continuation)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/sources/02_eventbrite.py", line 214, in fetch_events_page
+    resp = requests.get(BASE_URL, headers=AUTH_HEADERS, params=params, timeout=20)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/requests/api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/vicren/Documents/CodeHub/NightShift/ingestion/.venv/lib/python3.13/site-packages/requests/adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='www.eventbriteapi.com', port=443): Read timed out. (read timeout=20)
+2026-06-01 15:06:01,552  ERROR     Step 'Eventbrite (events)' failed — continuing to next step.
+2026-06-01 15:06:01,552  WARNING   ━━━ SKIP   Songkick (events) — missing env vars: SONGKICK_API_KEY ━━━
+2026-06-01 15:06:01,552  INFO      ━━━ START  Instagram (deals) ━━━
+2026-06-01 15:06:02,008  INFO      Found 0 venues with Instagram handles.
+2026-06-01 15:06:05,070  INFO      Done. deals_inserted=0  events_inserted=0  venues_skipped=0
+2026-06-01 15:06:05,071  INFO      ━━━ DONE   Instagram (deals)  elapsed=3.5s  counts={'deals_inserted': 0, 'events_inserted': 0, 'venues_skipped': 0} ━━━
+2026-06-01 15:06:05,071  INFO      ─── Timing ───
+2026-06-01 15:06:05,071  INFO        Neighbourhoods                  OK  0.4s
+2026-06-01 15:06:05,071  INFO        Google Places (venues)          OK  800.4s
+2026-06-01 15:06:05,071  INFO        Eventbrite (events)             FAILED  36.3s
+2026-06-01 15:06:05,071  INFO        Songkick (events)               SKIPPED  0.0s
+2026-06-01 15:06:05,071  INFO        Instagram (deals)               OK  3.5s
+2026-06-01 15:06:05,071  INFO      ═══ Pipeline finished at 2026-06-01T19:06:05.071308+00:00  total=840.6s  status=FAILED ═══
