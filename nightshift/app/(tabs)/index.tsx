@@ -296,7 +296,10 @@ export default function HomeScreen() {
 
         {/* ── Neighbourhood filter ── */}
         <View style={[styles.section, { gap: 0 }]}>
-          <SectionHeader title="By neighbourhood" />
+          <SectionHeader
+            title="By neighbourhood"
+            onSeeAll={() => router.push('/neighbourhood')}
+          />
           <NeighbourhoodFilter
             neighbourhoods={neighbourhoods}
             selected={selectedNeighbourhood}
