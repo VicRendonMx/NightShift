@@ -3,7 +3,8 @@ import {
   View, Text, StyleSheet, Animated, Pressable,
   TouchableOpacity, Dimensions, ScrollView,
 } from 'react-native'
-import MapView, { Marker, PROVIDER_DEFAULT } from 'react-native-maps'
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps'
+import NEON_MAP_STYLE from '../lib/neonMapStyle'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { LinearGradient } from 'expo-linear-gradient'
 import { router } from 'expo-router'
@@ -82,18 +83,16 @@ function VenueMarker({
   const size   = scoreToSize(score)
 
   useEffect(() => {
-    // Outer ring — slow wide pulse
     const a1 = Animated.loop(
       Animated.sequence([
-        Animated.timing(pulse,  { toValue: score > 0.5 ? 2.2 : 1.5, duration: 1000, useNativeDriver: true }),
-        Animated.timing(pulse,  { toValue: 1, duration: 1000, useNativeDriver: true }),
+        Animated.timing(pulse,  { toValue: score > 0.5 ? 1.7 : 1.3, duration: 1100, useNativeDriver: true }),
+        Animated.timing(pulse,  { toValue: 1, duration: 1100, useNativeDriver: true }),
       ])
     )
-    // Inner ring — faster tighter pulse
     const a2 = Animated.loop(
       Animated.sequence([
-        Animated.timing(pulse2, { toValue: score > 0.5 ? 1.6 : 1.2, duration: 700,  useNativeDriver: true }),
-        Animated.timing(pulse2, { toValue: 1, duration: 700,  useNativeDriver: true }),
+        Animated.timing(pulse2, { toValue: score > 0.5 ? 1.3 : 1.1, duration: 750,  useNativeDriver: true }),
+        Animated.timing(pulse2, { toValue: 1, duration: 750,  useNativeDriver: true }),
       ])
     )
     a1.start()
@@ -101,10 +100,10 @@ function VenueMarker({
     return () => { a1.stop(); a2.stop() }
   }, [score])
 
-  const outerGlowOpacity  = score >= 0.75 ? 0.55 : score >= 0.5 ? 0.4 : score >= 0.25 ? 0.25 : 0.12
-  const innerGlowOpacity  = score >= 0.75 ? 0.75 : score >= 0.5 ? 0.55 : score >= 0.25 ? 0.35 : 0.18
-  const shadowRadius      = score >= 0.75 ? 22 : score >= 0.5 ? 14 : 6
-  const shadowOpacity     = score >= 0.75 ? 1   : score >= 0.5 ? 0.8 : 0.4
+  const outerGlowOpacity = score >= 0.75 ? 0.30 : score >= 0.5 ? 0.22 : score >= 0.25 ? 0.14 : 0.07
+  const innerGlowOpacity = score >= 0.75 ? 0.50 : score >= 0.5 ? 0.36 : score >= 0.25 ? 0.22 : 0.12
+  const shadowRadius     = score >= 0.75 ? 14   : score >= 0.5 ? 9    : 4
+  const shadowOpacity    = score >= 0.75 ? 0.85 : score >= 0.5 ? 0.6  : 0.3
 
   const pad = size + 20
   return (
@@ -324,13 +323,15 @@ export default function MapScreen() {
       <MapView
         ref={mapRef}
         style={StyleSheet.absoluteFill}
-        provider={PROVIDER_DEFAULT}
+        provider={PROVIDER_GOOGLE}
         initialRegion={TORONTO}
-        userInterfaceStyle="dark"
+        customMapStyle={NEON_MAP_STYLE}
         showsUserLocation
         showsCompass={false}
         showsScale={false}
-        mapType="mutedStandard"
+        showsTraffic={false}
+        showsBuildings={false}
+        showsPointsOfInterest={false}
         onPress={() => setSelected(null)}
       >
         {scored.map(({ venue, score }) => (
