@@ -60,21 +60,17 @@ function scoreToColor(score: number): string {
 }
 
 function scoreToSize(score: number): number {
-  return 12 + Math.round(score * 28) // 12–40 px radius
+  return 6 + Math.round(score * 14) // 6–20 px radius (half)
 }
 
 // ── Pulsing marker ────────────────────────────────────────────────────────────
 
 function VenueMarker({
-  venue,
   score,
   selected,
-  onPress,
 }: {
-  venue: VenueRow
   score: number
   selected: boolean
-  onPress: () => void
 }) {
   const pulse  = useRef(new Animated.Value(1)).current
   const pulse2 = useRef(new Animated.Value(1)).current
@@ -104,55 +100,57 @@ function VenueMarker({
   const shadowRadius     = score >= 0.75 ? 14   : score >= 0.5 ? 9    : 4
   const shadowOpacity    = score >= 0.75 ? 0.85 : score >= 0.5 ? 0.6  : 0.3
 
-  const pad = size + 20
+  // Tap area is always at least 44px for reliable touch
+  const tapSize = Math.max(44, size * 2 + 24)
+
   return (
-    <Pressable onPress={onPress} hitSlop={8}>
-      <View style={{ width: pad * 2, height: pad * 2, alignItems: 'center', justifyContent: 'center' }}>
-        {/* Outer glow ring */}
-        <Animated.View
-          style={{
-            position: 'absolute',
-            width: (size + 14) * 2,
-            height: (size + 14) * 2,
-            borderRadius: size + 14,
-            backgroundColor: color,
-            opacity: outerGlowOpacity,
-            transform: [{ scale: pulse }],
-          }}
-        />
-        {/* Inner glow ring */}
-        <Animated.View
-          style={{
-            position: 'absolute',
-            width: (size + 6) * 2,
-            height: (size + 6) * 2,
-            borderRadius: size + 6,
-            backgroundColor: color,
-            opacity: innerGlowOpacity,
-            transform: [{ scale: pulse2 }],
-          }}
-        />
-        {/* Core dot */}
-        <View
-          style={{
-            width: size * 2,
-            height: size * 2,
-            borderRadius: size,
-            backgroundColor: color,
-            alignItems: 'center',
-            justifyContent: 'center',
-            borderWidth: selected ? 3 : 1.5,
-            borderColor: selected ? '#fff' : color + 'AA',
-            shadowColor: color,
-            shadowOpacity,
-            shadowRadius,
-            shadowOffset: { width: 0, height: 0 },
-          }}
-        >
-          {score >= 0.75 && <Text style={{ fontSize: 10, color: '#000', fontWeight: '900' }}>★</Text>}
-        </View>
+    <View style={{ width: tapSize, height: tapSize, alignItems: 'center', justifyContent: 'center' }}>
+      {/* Glow rings — pointerEvents none so touches reach the Marker */}
+      <Animated.View
+        pointerEvents="none"
+        style={{
+          position: 'absolute',
+          width: (size + 10) * 2,
+          height: (size + 10) * 2,
+          borderRadius: size + 10,
+          backgroundColor: color,
+          opacity: outerGlowOpacity,
+          transform: [{ scale: pulse }],
+        }}
+      />
+      <Animated.View
+        pointerEvents="none"
+        style={{
+          position: 'absolute',
+          width: (size + 4) * 2,
+          height: (size + 4) * 2,
+          borderRadius: size + 4,
+          backgroundColor: color,
+          opacity: innerGlowOpacity,
+          transform: [{ scale: pulse2 }],
+        }}
+      />
+      {/* Core dot */}
+      <View
+        pointerEvents="none"
+        style={{
+          width: size * 2,
+          height: size * 2,
+          borderRadius: size,
+          backgroundColor: color,
+          alignItems: 'center',
+          justifyContent: 'center',
+          borderWidth: selected ? 2.5 : 1,
+          borderColor: selected ? '#fff' : color + 'AA',
+          shadowColor: color,
+          shadowOpacity,
+          shadowRadius,
+          shadowOffset: { width: 0, height: 0 },
+        }}
+      >
+        {score >= 0.75 && <Text pointerEvents="none" style={{ fontSize: 8, color: '#000', fontWeight: '900' }}>★</Text>}
       </View>
-    </Pressable>
+    </View>
   )
 }
 
@@ -329,7 +327,7 @@ export default function MapScreen() {
         showsUserLocation
         showsCompass={false}
         showsScale={false}
-        showsPointsOfInterest={false}
+        showsPointsOfInterests={false}
         showsTraffic={false}
         onPress={() => setSelected(null)}
       >
@@ -342,10 +340,8 @@ export default function MapScreen() {
             onPress={() => handleMarkerPress(venue)}
           >
             <VenueMarker
-              venue={venue}
               score={score}
               selected={selected?.id === venue.id}
-              onPress={() => handleMarkerPress(venue)}
             />
           </Marker>
         ))}
@@ -429,7 +425,7 @@ const styles = StyleSheet.create({
   },
   loadingText: { fontSize: 13, color: '#fff', fontWeight: '600' },
   neonOverlay: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     backgroundColor: 'rgba(40, 0, 80, 0.18)',
   },
 })
