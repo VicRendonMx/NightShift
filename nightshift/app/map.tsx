@@ -60,7 +60,7 @@ function scoreToColor(score: number): string {
 }
 
 function scoreToSize(score: number): number {
-  return 10 + Math.round(score * 22) // 10–32 px radius
+  return 12 + Math.round(score * 28) // 12–40 px radius
 }
 
 // ── Pulsing marker ────────────────────────────────────────────────────────────
@@ -76,71 +76,87 @@ function VenueMarker({
   selected: boolean
   onPress: () => void
 }) {
-  const pulse = useRef(new Animated.Value(1)).current
-  const color = scoreToColor(score)
-  const size = scoreToSize(score)
+  const pulse  = useRef(new Animated.Value(1)).current
+  const pulse2 = useRef(new Animated.Value(1)).current
+  const color  = scoreToColor(score)
+  const size   = scoreToSize(score)
 
   useEffect(() => {
-    if (score < 0.5) return // only pulse strong matches
-    const anim = Animated.loop(
+    // Outer ring — slow wide pulse
+    const a1 = Animated.loop(
       Animated.sequence([
-        Animated.timing(pulse, { toValue: 1.4, duration: 900, useNativeDriver: true }),
-        Animated.timing(pulse, { toValue: 1,   duration: 900, useNativeDriver: true }),
+        Animated.timing(pulse,  { toValue: score > 0.5 ? 2.2 : 1.5, duration: 1000, useNativeDriver: true }),
+        Animated.timing(pulse,  { toValue: 1, duration: 1000, useNativeDriver: true }),
       ])
     )
-    anim.start()
-    return () => anim.stop()
+    // Inner ring — faster tighter pulse
+    const a2 = Animated.loop(
+      Animated.sequence([
+        Animated.timing(pulse2, { toValue: score > 0.5 ? 1.6 : 1.2, duration: 700,  useNativeDriver: true }),
+        Animated.timing(pulse2, { toValue: 1, duration: 700,  useNativeDriver: true }),
+      ])
+    )
+    a1.start()
+    a2.start()
+    return () => { a1.stop(); a2.stop() }
   }, [score])
 
+  const outerGlowOpacity  = score >= 0.75 ? 0.55 : score >= 0.5 ? 0.4 : score >= 0.25 ? 0.25 : 0.12
+  const innerGlowOpacity  = score >= 0.75 ? 0.75 : score >= 0.5 ? 0.55 : score >= 0.25 ? 0.35 : 0.18
+  const shadowRadius      = score >= 0.75 ? 22 : score >= 0.5 ? 14 : 6
+  const shadowOpacity     = score >= 0.75 ? 1   : score >= 0.5 ? 0.8 : 0.4
+
+  const pad = size + 20
   return (
-    <Pressable onPress={onPress} hitSlop={12}>
-      <View style={[markerStyles.wrap, { width: size * 2 + 16, height: size * 2 + 16 }]}>
-        {/* Glow ring */}
+    <Pressable onPress={onPress} hitSlop={8}>
+      <View style={{ width: pad * 2, height: pad * 2, alignItems: 'center', justifyContent: 'center' }}>
+        {/* Outer glow ring */}
         <Animated.View
-          style={[
-            markerStyles.glow,
-            {
-              width: size * 2 + 12,
-              height: size * 2 + 12,
-              borderRadius: size + 6,
-              backgroundColor: color + '30',
-              transform: [{ scale: pulse }],
-            },
-          ]}
+          style={{
+            position: 'absolute',
+            width: (size + 14) * 2,
+            height: (size + 14) * 2,
+            borderRadius: size + 14,
+            backgroundColor: color,
+            opacity: outerGlowOpacity,
+            transform: [{ scale: pulse }],
+          }}
+        />
+        {/* Inner glow ring */}
+        <Animated.View
+          style={{
+            position: 'absolute',
+            width: (size + 6) * 2,
+            height: (size + 6) * 2,
+            borderRadius: size + 6,
+            backgroundColor: color,
+            opacity: innerGlowOpacity,
+            transform: [{ scale: pulse2 }],
+          }}
         />
         {/* Core dot */}
         <View
-          style={[
-            markerStyles.dot,
-            {
-              width: size * 2,
-              height: size * 2,
-              borderRadius: size,
-              backgroundColor: color,
-              borderWidth: selected ? 3 : 0,
-              borderColor: '#fff',
-              shadowColor: color,
-              shadowOpacity: score > 0.5 ? 0.8 : 0.3,
-              shadowRadius: score > 0.5 ? 10 : 4,
-              shadowOffset: { width: 0, height: 0 },
-            },
-          ]}
+          style={{
+            width: size * 2,
+            height: size * 2,
+            borderRadius: size,
+            backgroundColor: color,
+            alignItems: 'center',
+            justifyContent: 'center',
+            borderWidth: selected ? 3 : 1.5,
+            borderColor: selected ? '#fff' : color + 'AA',
+            shadowColor: color,
+            shadowOpacity,
+            shadowRadius,
+            shadowOffset: { width: 0, height: 0 },
+          }}
         >
-          {score >= 0.75 && (
-            <Text style={markerStyles.star}>★</Text>
-          )}
+          {score >= 0.75 && <Text style={{ fontSize: 10, color: '#000', fontWeight: '900' }}>★</Text>}
         </View>
       </View>
     </Pressable>
   )
 }
-
-const markerStyles = StyleSheet.create({
-  wrap: { alignItems: 'center', justifyContent: 'center' },
-  glow: { position: 'absolute' },
-  dot: { alignItems: 'center', justifyContent: 'center' },
-  star: { fontSize: 9, color: '#000', fontWeight: '900' },
-})
 
 // ── Bottom venue card ─────────────────────────────────────────────────────────
 

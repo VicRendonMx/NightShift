@@ -7,6 +7,8 @@ export type VenueRow = {
   name: string
   slug: string | null
   address: string | null
+  lat: number | null
+  lng: number | null
   venue_type: 'nightclub' | 'bar' | 'lounge' | 'rooftop' | 'afterhours' | 'live_music' | 'comedy' | null
   vibe_tags: string[] | null
   music_genres: string[] | null
@@ -42,7 +44,7 @@ export function useVenues() {
         supabase
           .from('venue')
           .select(`
-            id, name, slug, address, venue_type, vibe_tags, music_genres,
+            id, name, slug, address, lat, lng, venue_type, vibe_tags, music_genres,
             google_rating, google_review_count, has_cover_charge, cover_notes,
             neighbourhood:neighbourhood_id(id, name, slug),
             venue_photo(url, is_primary, sort_order)
@@ -78,6 +80,8 @@ export function useVenues() {
           name: v.name,
           slug: v.slug,
           address: v.address,
+          lat: (v as any).lat ?? null,
+          lng: (v as any).lng ?? null,
           venue_type: v.venue_type,
           vibe_tags: v.vibe_tags,
           music_genres: v.music_genres,
