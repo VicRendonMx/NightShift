@@ -3,8 +3,7 @@ import {
   View, Text, StyleSheet, Animated, Pressable,
   TouchableOpacity, Dimensions, ScrollView,
 } from 'react-native'
-import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps'
-import NEON_MAP_STYLE from '../lib/neonMapStyle'
+import MapView, { Marker, PROVIDER_DEFAULT } from 'react-native-maps'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { LinearGradient } from 'expo-linear-gradient'
 import { router } from 'expo-router'
@@ -323,15 +322,15 @@ export default function MapScreen() {
       <MapView
         ref={mapRef}
         style={StyleSheet.absoluteFill}
-        provider={PROVIDER_GOOGLE}
+        provider={PROVIDER_DEFAULT}
         initialRegion={TORONTO}
-        customMapStyle={NEON_MAP_STYLE}
+        userInterfaceStyle="dark"
+        mapType="mutedStandard"
         showsUserLocation
         showsCompass={false}
         showsScale={false}
-        showsTraffic={false}
-        showsBuildings={false}
         showsPointsOfInterest={false}
+        showsTraffic={false}
         onPress={() => setSelected(null)}
       >
         {scored.map(({ venue, score }) => (
@@ -351,6 +350,9 @@ export default function MapScreen() {
           </Marker>
         ))}
       </MapView>
+
+      {/* Neon tint overlay — gives Apple Maps a purple/neon cast */}
+      <View style={styles.neonOverlay} pointerEvents="none" />
 
       {/* Back button */}
       <SafeAreaView edges={['top']} style={styles.topBar}>
@@ -426,4 +428,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20, paddingVertical: 10,
   },
   loadingText: { fontSize: 13, color: '#fff', fontWeight: '600' },
+  neonOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(40, 0, 80, 0.18)',
+  },
 })
