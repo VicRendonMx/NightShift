@@ -256,6 +256,11 @@ export default function ExploreScreen() {
 
   return (
     <SafeAreaView style={styles.root} edges={['top']}>
+      {/* ── Header ── */}
+      <View style={styles.header}>
+        <Text style={styles.headerTitle}>Explore</Text>
+      </View>
+
       {/* ── Search bar ── */}
       <View style={styles.searchWrap}>
         <Text style={styles.searchIcon}>🔍</Text>
@@ -388,14 +393,26 @@ export default function ExploreScreen() {
 const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: BG },
 
+  header: {
+    paddingHorizontal: 20,
+    paddingTop: 8,
+    paddingBottom: 4,
+  },
+  headerTitle: {
+    fontSize: 28,
+    fontWeight: '900',
+    color: '#fff',
+    letterSpacing: -0.8,
+  },
+
   searchWrap: {
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#161616',
     borderRadius: 14,
     marginHorizontal: 16,
-    marginTop: 12,
-    marginBottom: 12,
+    marginTop: 10,
+    marginBottom: 10,
     paddingHorizontal: 14,
     borderWidth: 1,
     borderColor: '#222',
@@ -409,7 +426,7 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
 
-  filterRow: { paddingHorizontal: 16, gap: 8, paddingBottom: 4 },
+  filterRow: { paddingHorizontal: 16, gap: 8, paddingBottom: 8 },
   clearBtn: {
     borderRadius: 20,
     paddingHorizontal: 14,
@@ -422,7 +439,10 @@ const styles = StyleSheet.create({
 
   resultsHeader: {
     paddingHorizontal: 16,
-    paddingVertical: 10,
+    paddingTop: 6,
+    paddingBottom: 10,
+    borderTopWidth: 1,
+    borderTopColor: '#141414',
   },
   resultsCount: { fontSize: 13, color: '#555', fontWeight: '500' },
 
